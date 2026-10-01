@@ -3,48 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovaPulse — ინოვაციური ციფრული ტექნოლოგიების პლატფორმა</title>
-  <meta name="description" content="NovaPulse — თანამედროვე ხელოვნური ინტელექტის, ღრუბლოვანი სერვისებისა და ციფრული ტრანსფორმაციის პლატფორმა. მიიღეთ შეუზღუდავი შესაძლებლობები თქვენი ბიზნესისთვის.">
-  <meta name="keywords" content="ტექნოლოგიები, AI, ინოვაცია, ვებ დეველოპმენტი, Cloud, NovaPulse">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <title>საქართველოს ეროვნული საფეხბურთო ნაკრები — ოფიციალური პორტალი და შემადგენლობა</title>
+  <meta name="description" content="საქართველოს ეროვნული საფეხბურთო ნაკრების (ჯვაროსნები) სრული შემადგენლობა, მოთამაშეების ასაკი, კლუბები, სტატისტიკა და უახლესი მატჩები.">
+  <meta name="keywords" content="საქართველოს ნაკრები, ფეხბურთი, კვარაცხელია, მამარდაშვილი, მიქაუტაძე, ევრო 2024, ჯვაროსნები, ვილი სანიოლი, ნაკრების შემადგენლობა">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇬🇪</text></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Georgian -->
+  <!-- Google Fonts: Noto Sans Georgian & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient Background Glow Elements -->
-  <div class="ambient-glow glow-1" aria-hidden="true"></div>
-  <div class="ambient-glow glow-2" aria-hidden="true"></div>
-  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-glow glow-red" aria-hidden="true"></div>
+  <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar-wrapper" id="main-header">
+  <!-- Header / Navigation -->
+  <header class="site-header" id="main-header">
     <nav class="navbar container" aria-label="მთავარი ნავიგაცია">
-      <a href="#hero" class="brand-logo" id="brand-logo">
-        <div class="logo-icon-box">
-          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="საქართველოს ნაკრები მთავარი">
+        <div class="crest-box">
+          <span class="flag-icon">🇬🇪</span>
         </div>
-        <span class="logo-text">Nova<span class="logo-gradient">Pulse</span></span>
+        <div class="brand-titles">
+          <span class="brand-geo">საქართველო</span>
+          <span class="brand-sub">CRUSADERS • ეროვნული ნაკრები</span>
+        </div>
       </a>
 
-      <!-- Desktop Menu Links -->
+      <!-- Desktop Links -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero" class="nav-link active" id="nav-link-hero">მთავარი</a></li>
-        <li><a href="#about" class="nav-link" id="nav-link-about">ჩვენ შესახებ</a></li>
-        <li><a href="#features" class="nav-link" id="nav-link-features">შესაძლებლობები</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-link-contact">კონტაქტი</a></li>
+        <li><a href="#squad" class="nav-link" id="nav-link-squad">შემადგენლობა</a></li>
+        <li><a href="#history" class="nav-link" id="nav-link-history">ისტორია & შედეგები</a></li>
+        <li><a href="#coach" class="nav-link" id="nav-link-coach">სამწვრთნელო შტაბი</a></li>
+        <li><a href="#fanzone" class="nav-link" id="nav-link-fanzone">ფან-ზონა & ქვიზი</a></li>
       </ul>
 
-      <!-- Navbar Actions -->
+      <!-- Action Buttons -->
       <div class="nav-actions">
-        <!-- Theme Toggle Button -->
-        <button class="theme-toggle" id="theme-toggle" aria-label="თემის შეცვლა" title="დღის / ღამის რეჟიმი">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="ფერების თემის შეცვლა" title="დღის / ღამის რეჟიმი">
           <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -62,15 +64,15 @@
         </button>
 
         <!-- CTA Button -->
-        <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-btn">
-          <span>დაიწყე ახლავე</span>
-          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="#squad" class="btn btn-primary nav-cta" id="nav-squad-btn">
+          <span>გუნდის სია</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </a>
 
-        <!-- Mobile Menu Toggle Button -->
+        <!-- Mobile Drawer Toggle -->
         <button class="mobile-toggle" id="mobile-toggle" aria-label="მენიუს გახსნა" aria-expanded="false">
           <span class="bar bar-1"></span>
           <span class="bar bar-2"></span>
@@ -79,16 +81,17 @@
       </div>
     </nav>
 
-    <!-- Mobile Drawer Navigation -->
-    <div class="mobile-menu-drawer" id="mobile-menu-drawer" aria-hidden="true">
-      <ul class="mobile-nav-links">
-        <li><a href="#hero" class="mobile-nav-link" id="mob-link-hero">მთავარი</a></li>
-        <li><a href="#about" class="mobile-nav-link" id="mob-link-about">ჩვენ შესახებ</a></li>
-        <li><a href="#features" class="mobile-nav-link" id="mob-link-features">შესაძლებლობები</a></li>
-        <li><a href="#contact" class="mobile-nav-link" id="mob-link-contact">კონტაქტი</a></li>
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-links">
+        <li><a href="#hero" class="mobile-link" id="mob-link-hero">მთავარი</a></li>
+        <li><a href="#squad" class="mobile-link" id="mob-link-squad">შემადგენლობა</a></li>
+        <li><a href="#history" class="mobile-link" id="mob-link-history">ისტორია & შედეგები</a></li>
+        <li><a href="#coach" class="mobile-link" id="mob-link-coach">სამწვრთნელო შტაბი</a></li>
+        <li><a href="#fanzone" class="mobile-link" id="mob-link-fanzone">ფან-ზონა & ქვიზი</a></li>
       </ul>
       <div class="mobile-drawer-footer">
-        <a href="#contact" class="btn btn-primary w-full" id="mob-cta-btn">დაიწყე ახლავე</a>
+        <a href="#squad" class="btn btn-primary w-full" id="mob-cta-btn">შემადგენლობის ნახვა</a>
       </div>
     </div>
   </header>
@@ -96,614 +99,338 @@
   <main>
     <!-- HERO SECTION -->
     <section class="section hero-section" id="hero">
+      <div class="hero-bg-media">
+        <img src="assets/geo_hero.jpg" alt="საქართველოს ეროვნული ნაკრები ზეიმობს ისტორიულ გამარჯვებას" class="hero-bg-img" loading="eager">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
       <div class="container hero-container">
-        <!-- Hero Content (Left) -->
-        <div class="hero-content reveal-fade-up">
-          <div class="badge hero-badge">
-            <span class="badge-pulse"></span>
-            <span class="badge-text">🚀 2026 წლის #1 ციფრული ეკოსისტემა</span>
-          </div>
-
-          <h1 class="hero-title">
-            შექმენი შენი ციფრული მომავალი 
-            <span class="gradient-text text-glow">NovaPulse-თან ერთად</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            მაღალი წარმადობის, ინტელექტუალური და შეუვალი პლატფორმა თქვენი იდეების მასშტაბირებისთვის. გააერთიანეთ თანამედროვე ხელოვნური ინტელექტი, ღრუბლოვანი ანალიტიკა და ავტომატიზაცია ერთიან ეკოსისტემაში.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary btn-glow" id="hero-primary-cta">
-              <span>დაიწყე უფასოდ</span>
-              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <button class="btn btn-secondary" id="open-demo-modal" aria-label="ვიდეო დემოს ნახვა">
-              <span class="play-icon-box">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </span>
-              <span>ვიდეო დემო</span>
-            </button>
-          </div>
-
-          <!-- Social Proof / Reviews -->
-          <div class="hero-trust">
-            <div class="user-avatars">
-              <div class="avatar" style="background: linear-gradient(135deg, #a855f7, #6366f1);">AT</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">NK</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #10b981, #059669);">GL</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">MS</div>
-              <div class="avatar avatar-count">+10k</div>
-            </div>
-            <div class="trust-text">
-              <div class="stars">★★★★★</div>
-              <span><strong>4.9 / 5</strong> რეიტინგი 10,000+ კმაყოფილი მომხმარებლისგან</span>
-            </div>
-          </div>
+        <div class="hero-badge reveal-fade-up">
+          <span class="badge-dot"></span>
+          <span class="badge-text">🇬🇪 UEFA EURO 2024 მეოთხედფინალისტი • ჯვაროსნები</span>
         </div>
 
-        <!-- Hero Visual (Right) -->
-        <div class="hero-visual reveal-fade-up" style="animation-delay: 0.2s;">
-          <div class="visual-card-wrapper tilt-card" id="hero-tilt-card">
-            <div class="visual-card-glow"></div>
-            <div class="visual-card-inner">
-              <img src="assets/hero.jpg" alt="NovaPulse 3D Dashboard Preview" class="hero-img" loading="eager">
-              <div class="visual-overlay"></div>
+        <h1 class="hero-title reveal-fade-up" style="animation-delay: 0.1s;">
+          საქართველოს ეროვნული 
+          <span class="title-highlight">საფეხბურთო ნაკრები</span>
+        </h1>
 
-              <!-- Floating UI Badges -->
-              <div class="floating-badge badge-top-left pulse-subtle">
-                <div class="badge-icon-wrap bg-cyan">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <div class="f-title">რეალურ დროში</div>
-                  <div class="f-desc text-cyan">+148% სისწრაფე</div>
-                </div>
-              </div>
+        <p class="hero-description reveal-fade-up" style="animation-delay: 0.2s;">
+          ჩვენ ვართ საქართველო! გაიცანით ეროვნული ნაკრების სრული შემადგენლობა — ფეხბურთელები, მათი ასაკი, კლუბები, საერთაშორისო სტატისტიკა და ისტორიული მიღწევები ერთიან ინტერაქციულ პლატფორმაზე.
+        </p>
 
-              <div class="floating-badge badge-bottom-right pulse-subtle" style="animation-delay: 1.5s;">
-                <div class="badge-icon-wrap bg-violet">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="f-title">უსაფრთხოების ფარი</div>
-                  <div class="f-desc text-violet">100% დაცული სისტემა</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Statistics Bar -->
-      <div class="container hero-stats-wrapper reveal-fade-up">
-        <div class="stats-grid glass-card">
-          <div class="stat-item">
-            <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
-            <div class="stat-label">უწყვეტი მუშაობის გარანტია (SLA)</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="250" data-suffix="K+">0</div>
-            <div class="stat-label">აქტიური მომხმარებელი გლობალურად</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="15" data-suffix="M+">0</div>
-            <div class="stat-label">დამუშავებული მოთხოვნა დღეში</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="0.05" data-suffix="წმ">0</div>
-            <div class="stat-label">რეაგირების მინიმალური დრო</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-header text-center reveal-fade-up">
-          <div class="badge">
-            <span class="badge-icon">💡</span>
-            <span>ჩვენ შესახებ</span>
-          </div>
-          <h2 class="section-title">
-            ინოვაცია, რომელიც ცვლის <span class="gradient-text">თამაშის წესებს</span>
-          </h2>
-          <p class="section-subtitle">
-            NovaPulse შეიქმნა იმისთვის, რომ ბიზნესებსა და დეველოპერებს მისცეს უპრეცედენტო სისწრაფე, ავტომატიზაცია და უმაღლესი დონის უსაფრთხოება.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <!-- Left: Story & Interactive Tabs -->
-          <div class="about-content reveal-fade-up">
-            <h3 class="about-lead">
-              ჩვენ ვაერთიანებთ უახლეს AI ტექნოლოგიებსა და ინტუიციურ ინტერფეისს.
-            </h3>
-            <p class="about-paragraph">
-              ჩვენი მიზანია ციფრული ტრანსფორმაციის პროცესი გავხადოთ მარტივი, გამჭვირვალე და მასშტაბირებადი. NovaPulse-ის ეკოსისტემა საშუალებას გაძლევთ გააერთიანოთ მონაცემთა ნაკადები, შექმნათ ავტონომიური სისტემები და მიიღოთ გადაწყვეტილებები რეალური ანალიტიკის საფუძველზე.
-            </p>
-
-            <!-- Feature Points Pill List -->
-            <div class="about-pillars">
-              <div class="pillar-item">
-                <div class="pillar-icon">🚀</div>
-                <div>
-                  <div class="pillar-title">ინოვაცია უპირველეს ყოვლისა</div>
-                  <div class="pillar-desc">მუდმივად განახლებადი ხელოვნური ინტელექტის მოდელები და ალგორითმები.</div>
-                </div>
-              </div>
-
-              <div class="pillar-item">
-                <div class="pillar-icon">🔒</div>
-                <div>
-                  <div class="pillar-title">საბანკო დონის კიბერუსაფრთხოება</div>
-                  <div class="pillar-desc">მრავალდონიანი დაშიფვრა, SOC-2 და GDPR სრული თავსებადობა.</div>
-                </div>
-              </div>
-
-              <div class="pillar-item">
-                <div class="pillar-icon">⚡</div>
-                <div>
-                  <div class="pillar-title">მყისიერი მასშტაბირება</div>
-                  <div class="pillar-desc">ღრუბლოვანი ინფრასტრუქტურა, რომელიც ავტომატურად ერგება თქვენს მოთხოვნებს.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Interactive Tab Box -->
-            <div class="about-tabs-box glass-card">
-              <div class="tab-buttons" role="tablist">
-                <button class="tab-btn active" data-tab="mission" role="tab" id="tab-btn-mission">ჩვენი მისია</button>
-                <button class="tab-btn" data-tab="tech" role="tab" id="tab-btn-tech">ტექნოლოგია</button>
-                <button class="tab-btn" data-tab="values" role="tab" id="tab-btn-values">ღირებულებები</button>
-              </div>
-
-              <div class="tab-content active" id="tab-content-mission" role="tabpanel">
-                <p>ჩვენი მისიაა მივცეთ თითოეულ ორგანიზაციასა და ინოვატორს შესაძლებლობა, გამოიყენონ უახლესი ტექნოლოგიური მიღწევები ბიუროკრატიისა და რთული კონფიგურაციების გარეშე.</p>
-              </div>
-              <div class="tab-content" id="tab-content-tech" role="tabpanel">
-                <p>NovaPulse დაფუძნებულია მიკროსერვისულ, დეცენტრალიზებულ არქიტექტურაზე, თანამედროვე მანქანურ სწავლებასა და ულტრა-დაბალი დაყოვნების ქსელებზე (Edge Computing).</p>
-              </div>
-              <div class="tab-content" id="tab-content-values" role="tabpanel">
-                <p>გამჭვირვალობა, მომხმარებელზე ორიენტირებულობა და უწყვეტი სწრაფვა სრულყოფილებისკენ — ეს არის ის ძირითადი ფუნდამენტი, რომელზეც ვაშენებთ ჩვენს პროდუქტს.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Visual Showcase -->
-          <div class="about-visual reveal-fade-up" style="animation-delay: 0.25s;">
-            <div class="about-card-wrapper tilt-card" id="about-tilt-card">
-              <div class="about-image-frame">
-                <img src="assets/about.jpg" alt="NovaPulse AI Core Architecture" class="about-img" loading="lazy">
-                <div class="about-img-overlay"></div>
-
-                <!-- Floating Info Widget -->
-                <div class="about-floating-card glass-card">
-                  <div class="card-icon-accent">🧠</div>
-                  <div>
-                    <div class="afc-number">Next-Gen AI Core</div>
-                    <div class="afc-text">ნეირონული დამუშავების ძრავა v4.2</div>
-                  </div>
-                </div>
-
-                <div class="experience-badge">
-                  <span class="exp-num">10+</span>
-                  <span class="exp-txt">წლიანი გამოცდილება</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section class="section features-section" id="features">
-      <div class="container">
-        <!-- Section Header -->
-        <div class="section-header text-center reveal-fade-up">
-          <div class="badge">
-            <span class="badge-icon">⚡</span>
-            <span>შესაძლებლობები</span>
-          </div>
-          <h2 class="section-title">
-            ყველაფერი, რაც გჭირდებათ <span class="gradient-text">სრული კონტროლისთვის</span>
-          </h2>
-          <p class="section-subtitle">
-            აღმოაჩინეთ ინსტრუმენტების სრული ნაკრები, რომელიც შექმნილია თქვენი სამუშაო პროცესების მაქსიმალური ავტომატიზაციისა და ზრდისთვის.
-          </p>
-
-          <!-- Category Filter Tabs -->
-          <div class="filter-tabs" id="feature-filters">
-            <button class="filter-btn active" data-filter="all">ყველა ფუნქცია</button>
-            <button class="filter-btn" data-filter="ai">ხელოვნური ინტელექტი</button>
-            <button class="filter-btn" data-filter="security">უსაფრთხოება</button>
-            <button class="filter-btn" data-filter="performance">წარმადობა</button>
-          </div>
-        </div>
-
-        <!-- Features Grid -->
-        <div class="features-grid" id="features-grid">
-          <!-- Feature 1 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="performance">
-            <div class="feature-icon-wrapper f-icon-cyan">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <span class="feature-tag">წარმადობა</span>
-            <h3 class="feature-title">ულტრა-სწრაფი წარმადობა</h3>
-            <p class="feature-description">
-              მონაცემთა მყისიერი დამუშავება და რეაგირების დრო 0.05 წამში. ოპტიმიზებული არქიტექტურა უზრუნველყოფს მაქსიმალურ სიჩქარეს ნებისმიერი დატვირთვისას.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="performance">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="security" style="animation-delay: 0.1s;">
-            <div class="feature-icon-wrapper f-icon-emerald">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <span class="feature-tag">უსაფრთხოება</span>
-            <h3 class="feature-title">საბანკო დონის დაცვა</h3>
-            <p class="feature-description">
-              ენდ-თუ-ენდ 256-ბიტიანი დაშიფვრა, მრავალფაქტორიანი ავთენტიფიკაცია და 24/7 კიბერუსაფრთხოების მონიტორინგი საფრთხეებისგან თავდასაცავად.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="security">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="ai" style="animation-delay: 0.2s;">
-            <div class="feature-icon-wrapper f-icon-violet">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
-                <path d="M12 6a6 6 0 0 0-6 6c0 1.9 1 3.5 2.5 4.5"></path>
-              </svg>
-            </div>
-            <span class="feature-tag">AI ინტელექტი</span>
-            <h3 class="feature-title">ჭკვიანი AI ავტომატიზაცია</h3>
-            <p class="feature-description">
-              თვითგანვითარებადი ალგორითმები, რომლებიც ავტომატურად ასრულებენ რუტინულ დავალებებს და ზოგავენ თქვენი გუნდის დროს 70%-ით.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="ai">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Feature 4 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="performance" style="animation-delay: 0.3s;">
-            <div class="feature-icon-wrapper f-icon-amber">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
-              </svg>
-            </div>
-            <span class="feature-tag">ანალიტიკა</span>
-            <h3 class="feature-title">რეალურ დროში მონიტორინგი</h3>
-            <p class="feature-description">
-              ვიზუალური დაფები და დეტალური მეტრიკები პირდაპირ ეთერში. თვალი ადევნეთ თითოეულ ტრანზაქციას, პროცესსა და კონვერსიას უწყვეტად.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="analytics">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Feature 5 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="ai" style="animation-delay: 0.4s;">
-            <div class="feature-icon-wrapper f-icon-rose">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-              </svg>
-            </div>
-            <span class="feature-tag">ღრუბლოვანი სერვისი</span>
-            <h3 class="feature-title">გლობალური Cloud სინქრონიზაცია</h3>
-            <p class="feature-description">
-              ავტომატური სარეზერვო ასლები, უსასრულო მასშტაბირება და შეუზღუდავი წვდომა მსოფლიოს ნებისმიერი წერტილიდან უმაღლესი სიჩქარით.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="cloud">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Feature 6 -->
-          <div class="feature-card glass-card reveal-fade-up tilt-card" data-category="security" style="animation-delay: 0.5s;">
-            <div class="feature-icon-wrapper f-icon-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </div>
-            <span class="feature-tag">მხარდაჭერა</span>
-            <h3 class="feature-title">24/7 პრემიუმ მხარდაჭერა</h3>
-            <p class="feature-description">
-              ჩვენი ექსპერტები მზად არიან დაგეხმარონ ნებისმიერ ტექნიკურ გამოწვევაში. პერსონალური მენეჯერი და მყისიერი ჩათ-კონსულტაცია.
-            </p>
-            <div class="feature-footer">
-              <button class="feature-learn-more" data-feature="support">
-                <span>გაიგე მეტი</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Extra Feature Callout Banner -->
-        <div class="feature-cta-banner glass-card reveal-fade-up">
-          <div class="cta-banner-content">
-            <h3 class="cta-banner-title">გსურთ ინდივიდუალური გადაწყვეტილება თქვენი პროექტისთვის?</h3>
-            <p class="cta-banner-text">ჩვენი ინჟინრები შეიმუშავებენ მორგებულ არქიტექტურას თქვენი კონკრეტული ბიზნეს ამოცანებისთვის.</p>
-          </div>
-          <a href="#contact" class="btn btn-primary btn-glow">
-            <span>მოითხოვე კონსულტაცია</span>
-            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div class="hero-actions reveal-fade-up" style="animation-delay: 0.3s;">
+          <a href="#squad" class="btn btn-primary btn-large btn-glow" id="hero-squad-btn">
+            <span>გაეცანი შემადგენლობას</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
+          <a href="#history" class="btn btn-secondary btn-large" id="hero-history-btn">
+            <span class="btn-play-icon">⚽</span>
+            <span>ისტორიული მატჩები</span>
+          </a>
+        </div>
+
+        <!-- Quick Live Stat Bar -->
+        <div class="hero-stats-grid reveal-fade-up" style="animation-delay: 0.4s;">
+          <div class="stat-card">
+            <div class="stat-number">26+</div>
+            <div class="stat-label">განაცხადის მოთამაშე</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">25.4</div>
+            <div class="stat-label">საშუალო ასაკი</div>
+          </div>
+          <div class="stat-card highlight-stat">
+            <div class="stat-number">TOP 16</div>
+            <div class="stat-label">ევრო 2024-ის პლეი-ოფი</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">€180M+</div>
+            <div class="stat-label">შემადგენლობის ღირებულება</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION (CONECT) -->
-    <section class="section contact-section" id="contact">
+    <!-- SQUAD SECTION -->
+    <section class="section squad-section" id="squad">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header text-center reveal-fade-up">
-          <div class="badge">
-            <span class="badge-icon">📬</span>
-            <span>კონტაქტი</span>
-          </div>
-          <h2 class="section-title">
-            დაგვიკავშირდით <span class="gradient-text">დღესვე</span>
-          </h2>
+        <div class="section-header text-center">
+          <div class="sub-badge">TEAM ROSTER</div>
+          <h2 class="section-title">ნაკრების სრული შემადგენლობა</h2>
           <p class="section-subtitle">
-            გაქვთ შეკითხვა, იდეა ან გსურთ პარტნიორობა? მოგვწერეთ და ჩვენი გუნდი 15 წუთის განმავლობაში დაგიკავშირდებათ.
+            იხილეთ თითოეული მოთამაშის ასაკი, კლუბი, სათამაშო პოზიცია, სანაკრებო სტატისტიკა და მიღწევები. გამოიყენეთ სწრაფი ძებნა და ფილტრები.
           </p>
         </div>
 
-        <div class="contact-grid">
-          <!-- Left: Contact Details & Info Cards -->
-          <div class="contact-info-col reveal-fade-up">
-            <div class="contact-info-intro">
-              <h3>დაიწყეთ თქვენი ციფრული ტრანსფორმაცია</h3>
-              <p>ჩვენი პროფესიონალთა გუნდი მზადაა გაგიწიოთ სრული კონსულტაცია და შემოგთავაზოთ საუკეთესო პირობები.</p>
-            </div>
-
-            <div class="contact-cards-list">
-              <!-- Info Card 1: Address -->
-              <div class="contact-item-card glass-card">
-                <div class="contact-icon-box bg-violet">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div class="contact-item-details">
-                  <span class="c-label">ოფისის მისამართი</span>
-                  <p class="c-val">ილია ჭავჭავაძის გამზ. #34, თბილისი, საქართველო</p>
-                </div>
-              </div>
-
-              <!-- Info Card 2: Phone -->
-              <div class="contact-item-card glass-card">
-                <div class="contact-icon-box bg-cyan">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                </div>
-                <div class="contact-item-details">
-                  <span class="c-label">ცხელი ხაზი</span>
-                  <a href="tel:+995322001122" class="c-val hover-link">+995 (32) 200-11-22</a>
-                </div>
-              </div>
-
-              <!-- Info Card 3: Email -->
-              <div class="contact-item-card glass-card">
-                <div class="contact-icon-box bg-emerald">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div class="contact-item-details">
-                  <span class="c-label">ელექტრონული ფოსტა</span>
-                  <a href="mailto:info@novapulse.ge" class="c-val hover-link">info@novapulse.ge</a>
-                </div>
-              </div>
-
-              <!-- Info Card 4: Hours -->
-              <div class="contact-item-card glass-card">
-                <div class="contact-icon-box bg-amber">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div class="contact-item-details">
-                  <span class="c-label">სამუშაო გრაფიკი</span>
-                  <p class="c-val">ორშაბათი - პარასკევი: 09:00 - 19:00</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media Handles -->
-            <div class="social-links-box">
-              <span class="social-title">გამოგვყევით სოციალურ ქსელებში:</span>
-              <div class="social-icons">
-                <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="#" class="social-btn" aria-label="GitHub" title="GitHub">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="#" class="social-btn" aria-label="Twitter / X" title="Twitter / X">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                </a>
-                <a href="#" class="social-btn" aria-label="Facebook" title="Facebook">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                </a>
-              </div>
-            </div>
+        <!-- Squad Controls (Search, Filters, Sort) -->
+        <div class="squad-controls-bar">
+          <!-- Search Input -->
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="player-search" class="search-input" placeholder="მოძებნე ფეხბურთელი, კლუბი ან პოზიცია (მაგ. კვარა, ვალენსია, მამარდა)..." autocomplete="off">
+            <button class="clear-search-btn" id="clear-search" aria-label="ძებნის გასუფთავება" style="display: none;">✕</button>
           </div>
 
-          <!-- Right: Interactive Contact Form -->
-          <div class="contact-form-col reveal-fade-up" style="animation-delay: 0.2s;">
-            <div class="contact-form-card glass-card">
-              <div class="form-header">
-                <h3>გამოგვიგზავნეთ შეტყობინება</h3>
-                <p>შეავსეთ ფორმა და ჩვენი გუნდი დაუყოვნებლივ დაგიკავშირდებათ.</p>
-              </div>
+          <!-- Position Filters Tabs -->
+          <div class="filter-tabs" id="position-filters" role="tablist">
+            <button class="filter-tab active" data-position="ALL" role="tab" aria-selected="true" id="tab-all">
+              <span>ყველა</span>
+              <span class="count-pill" id="count-all">26</span>
+            </button>
+            <button class="filter-tab" data-position="GK" role="tab" aria-selected="false" id="tab-gk">
+              <span>🧤 მეკარეები</span>
+              <span class="count-pill" id="count-gk">3</span>
+            </button>
+            <button class="filter-tab" data-position="DEF" role="tab" aria-selected="false" id="tab-def">
+              <span>🛡️ მცველები</span>
+              <span class="count-pill" id="count-def">10</span>
+            </button>
+            <button class="filter-tab" data-position="MID" role="tab" aria-selected="false" id="tab-mid">
+              <span>⚙️ ნახევარმცველები</span>
+              <span class="count-pill" id="count-mid">10</span>
+            </button>
+            <button class="filter-tab" data-position="FWD" role="tab" aria-selected="false" id="tab-fwd">
+              <span>⚡ თავდამსხმელები</span>
+              <span class="count-pill" id="count-fwd">3</span>
+            </button>
+          </div>
 
-              <form id="contact-form" novalidate>
-                <div class="form-row">
-                  <!-- Name Input -->
-                  <div class="form-group">
-                    <label for="contact-name">სახელი და გვარი <span class="required">*</span></label>
-                    <div class="input-wrap">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                      <input type="text" id="contact-name" name="name" placeholder="გიორგი ბერიძე" required>
-                    </div>
-                    <span class="field-error" id="name-error">გთხოვთ მიუთითოთ სახელი და გვარი</span>
-                  </div>
-
-                  <!-- Email Input -->
-                  <div class="form-group">
-                    <label for="contact-email">ელექტრონული ფოსტა <span class="required">*</span></label>
-                    <div class="input-wrap">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                      <input type="email" id="contact-email" name="email" placeholder="giorgi@example.ge" required>
-                    </div>
-                    <span class="field-error" id="email-error">გთხოვთ შეიყვანოთ სწორი ელ-ფოსტის მისამართი</span>
-                  </div>
-                </div>
-
-                <div class="form-row">
-                  <!-- Phone Input -->
-                  <div class="form-group">
-                    <label for="contact-phone">ტელეფონის ნომერი</label>
-                    <div class="input-wrap">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                      <input type="tel" id="contact-phone" name="phone" placeholder="+995 599 00 00 00">
-                    </div>
-                  </div>
-
-                  <!-- Service Select -->
-                  <div class="form-group">
-                    <label for="contact-service">დაინტერესების სფერო</label>
-                    <div class="input-wrap">
-                      <select id="contact-service" name="service">
-                        <option value="ai">ხელოვნური ინტელექტი (AI)</option>
-                        <option value="cloud">Cloud ინფრასტრუქტურა</option>
-                        <option value="cybersecurity">კიბერუსაფრთხოება</option>
-                        <option value="custom">სხვა ინდივიდუალური პროექტი</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Message Textarea -->
-                <div class="form-group">
-                  <label for="contact-message">შეტყობინება <span class="required">*</span></label>
-                  <div class="input-wrap">
-                    <textarea id="contact-message" name="message" rows="4" placeholder="გაგვიზიარეთ თქვენი პროექტის დეტალები ან შეკითხვა..." required></textarea>
-                  </div>
-                  <span class="field-error" id="message-error">გთხოვთ დაწეროთ შეტყობინება</span>
-                </div>
-
-                <!-- Agreement Checkbox -->
-                <div class="form-checkbox-group">
-                  <label class="custom-checkbox">
-                    <input type="checkbox" id="privacy-agree" required>
-                    <span class="checkmark"></span>
-                    <span class="checkbox-label">ვეთანხმები <a href="#privacy" class="text-cyan underline">კონფიდენციალურობის პოლიტიკას</a></span>
-                  </label>
-                  <span class="field-error" id="privacy-error">გთხოვთ დაადასტუროთ თანხმობა</span>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary btn-glow w-full form-submit-btn" id="submit-btn">
-                  <span class="btn-text">გაგზავნა</span>
-                  <span class="btn-spinner" aria-hidden="true"></span>
-                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </form>
+          <!-- Sort Dropdown -->
+          <div class="sort-wrapper">
+            <label for="sort-select" class="sort-label">დალაგება:</label>
+            <div class="select-container">
+              <select id="sort-select" class="sort-select">
+                <option value="number-asc">მაისურის ნომრით (#1-დან)</option>
+                <option value="age-asc">ასაკით: პატარიდან უფროსისკენ</option>
+                <option value="age-desc">ასაკით: უფროსიდან პატარისკენ</option>
+                <option value="name-asc">სახელით (ა-ჰ)</option>
+                <option value="market-desc">საბაზრო ღირებულებით</option>
+              </select>
             </div>
           </div>
         </div>
 
-        <!-- Interactive FAQ Accordion -->
-        <div class="faq-container reveal-fade-up">
-          <div class="faq-header text-center">
-            <h3 class="faq-title">ხშირად დასმული შეკითხვები</h3>
-            <p class="faq-subtitle">სწრაფი პასუხები თქვენთვის საინტერესო კითხვებზე</p>
+        <!-- Active Filter Status Indicator -->
+        <div class="filter-status-row">
+          <span class="results-text" id="results-count">ნაჩვენებია 26 ფეხბურთელი</span>
+          <button class="reset-filter-btn" id="reset-filter-btn" style="display: none;">ყველას ნახვა</button>
+        </div>
+
+        <!-- Squad Cards Grid -->
+        <div class="squad-grid" id="squad-grid">
+          <!-- Dynamically populated via script.js -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results-box" id="no-results" style="display: none;">
+          <div class="no-results-icon">🔍</div>
+          <h3>ფეხბურთელი ვერ მოიძებნა</h3>
+          <p>სცადეთ სხვა საძიებო სიტყვა (მაგალითად: „ხვიჩა“, „მიქაუტაძე“, „Napoli“, „კაშია“).</p>
+          <button class="btn btn-secondary" id="empty-reset-btn">ფილტრის გასუფთავება</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORICAL RESULTS & MOMENTS -->
+    <section class="section history-section" id="history">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="sub-badge">HISTORIC GLORY</div>
+          <h2 class="section-title">ისტორიული გამარჯვებები & შედეგები</h2>
+          <p class="section-subtitle">
+            მატჩები, რომლებმაც შეცვალეს ქართული ფეხბურთის ისტორია და გააერთიანეს მთელი ერი.
+          </p>
+        </div>
+
+        <div class="history-grid">
+          <!-- Card 1 -->
+          <div class="history-card feature-glow">
+            <div class="history-tag euro-tag">UEFA EURO 2024 • ჯგუფური ეტაპი</div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🇬🇪</span>
+                <span class="team-name">საქართველო</span>
+              </div>
+              <div class="score-pill">2 : 0</div>
+              <div class="team team-opp">
+                <span class="flag-lg">🇵🇹</span>
+                <span class="team-name">პორტუგალია</span>
+              </div>
+            </div>
+            <div class="scorers-list">
+              <div class="scorer">⚽ ხვიჩა კვარაცხელია 2'</div>
+              <div class="scorer">⚽ გიორგი მიქაუტაძე 57' (პენ.)</div>
+            </div>
+            <p class="history-desc">
+              ევროპის ჩემპიონატის ერთ-ერთი ყველაზე დიდი სენსაცია. საქართველოს ნაკრებმა კრიშტიანუ რონალდუს პორტუგალია დაამარცხა და ევროპის ჩემპიონატის 1/8 ფინალში გავიდა!
+            </p>
           </div>
 
-          <div class="accordion" id="faq-accordion">
-            <div class="accordion-item glass-card">
-              <button class="accordion-trigger" aria-expanded="false" id="faq-btn-1">
-                <span>რამდენად სწრაფად ხდება NovaPulse-ის ინტეგრაცია?</span>
-                <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <div class="accordion-panel" id="faq-panel-1">
-                <p>სტანდარტული ინტეგრაცია ხდება რამდენიმე წუთში ჩვენი მზა API-ებისა და SDK-ების მეშვეობით. ჩვენი ინჟინრები ასევე მზად არიან დაგეხმაროთ პერსონალიზებულ მიგრაციაში.</p>
+          <!-- Card 2 -->
+          <div class="history-card">
+            <div class="history-tag play-tag">EURO 2024 QUALIFIERS • ფინალი</div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🇬🇪</span>
+                <span class="team-name">საქართველო</span>
+              </div>
+              <div class="score-pill">0 : 0 (4:2 პენ.)</div>
+              <div class="team team-opp">
+                <span class="flag-lg">🇬🇷</span>
+                <span class="team-name">საბერძნეთი</span>
+              </div>
+            </div>
+            <div class="scorers-list">
+              <div class="scorer">🎯 ნიკა კვეკვესკირის გადამწყვეტი პენალტი</div>
+              <div class="scorer">🧤 მამარდაშვილის მოგერიებული დარტყმა</div>
+            </div>
+            <p class="history-desc">
+              2024 წლის 26 მარტი — თბილისში, „დინამო არენაზე“, საქართველოს ნაკრებმა ისტორიაში პირველად მოიპოვა ევროპის ჩემპიონატის საგზური!
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="history-card">
+            <div class="history-tag nl-tag">UEFA NATIONS LEAGUE 2024</div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🇬🇪</span>
+                <span class="team-name">საქართველო</span>
+              </div>
+              <div class="score-pill">4 : 1</div>
+              <div class="team team-opp">
+                <span class="flag-lg">🇨🇿</span>
+                <span class="team-name">ჩეხეთი</span>
+              </div>
+            </div>
+            <div class="scorers-list">
+              <div class="scorer">⚽ კვარაცხელია 33' • ჩაკვეტაძე 53'</div>
+              <div class="scorer">⚽ მიქაუტაძე 63' • ქოჩორაშვილი 66'</div>
+            </div>
+            <p class="history-desc">
+              ერთა ლიგის B დივიზიონის შთამბეჭდავი დებიუტი. 4 ულამაზესი გოლი ევროპის ერთ-ერთი ყველაზე ძლიერი და ორგანიზებული ნაკრების წინააღმდეგ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACH & STAFF SECTION -->
+    <section class="section coach-section" id="coach">
+      <div class="container">
+        <div class="coach-wrapper">
+          <div class="coach-info">
+            <div class="sub-badge">HEAD COACH</div>
+            <h2 class="coach-name">ვილი სანიოლი <span class="french-flag">🇫🇷</span></h2>
+            <div class="coach-role">საქართველოს ეროვნული ნაკრების მთავარი მწვრთნელი (2021-დღემდე)</div>
+            
+            <p class="coach-bio">
+              ლეგენდარულმა ფრანგმა სპეციალისტმა და მიუნხენის „ბაიერნის“ ყოფილმა ვარსკვლავმა საქართველოს ნაკრებში შექმნა შეუპოვარი, დისციპლინირებული და მებრძოლი სული. სწორედ სანიოლის ხელმძღვანელობით ნაკრებმა ისტორიაში უდიდეს მწვერვალს მიაღწია და ევრო 2024-ის 16 საუკეთესო გუნდს შორის მოხვდა.
+            </p>
+
+            <div class="coach-stats-grid">
+              <div class="coach-stat-item">
+                <div class="c-num">Euro 2024</div>
+                <div class="c-txt">ისტორიული გასვლა</div>
+              </div>
+              <div class="coach-stat-item">
+                <div class="c-num">50%+</div>
+                <div class="c-txt">მოგების მაჩვენებელი</div>
+              </div>
+              <div class="coach-stat-item">
+                <div class="c-num">B ლიგა</div>
+                <div class="c-txt">ერთა ლიგის დაწინაურება</div>
               </div>
             </div>
 
-            <div class="accordion-item glass-card">
-              <button class="accordion-trigger" aria-expanded="false" id="faq-btn-2">
-                <span>არის თუ არა უფასო საცდელი პერიოდი (Free Trial)?</span>
-                <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-              <div class="accordion-panel" id="faq-panel-2">
-                <p>დიახ, ჩვენ გთავაზობთ 14-დღიან სრულყოფილ საცდელ პერიოდს ყოველგვარი საკრედიტო ბარათის მონაცემების შეყვანის გარეშე.</p>
+            <div class="staff-crew">
+              <h4 class="crew-title">სამწვრთნელო შტაბი:</h4>
+              <div class="crew-badges">
+                <span class="crew-pill"><strong>ზურაბ ხიზანიშვილი</strong> — ასისტენტი</span>
+                <span class="crew-pill"><strong>ადელ შელი</strong> — ასისტენტი</span>
+                <span class="crew-pill"><strong>გიორგი ლომაია</strong> — მეკარეების მწვრთნელი</span>
               </div>
             </div>
+          </div>
 
-            <div class="accordion-item glass-card">
-              <button class="accordion-trigger" aria-expanded="false" id="faq-btn-3">
-                <span>როგორ არის დაცული ჩვენი კომპანიის მონაცემები?</span>
-                <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div class="coach-quote-box">
+            <div class="quote-mark">“</div>
+            <blockquote class="coach-quote">
+              „ქართველ ფეხბურთელებს აქვთ უსაზღვრო გული და ტალანტი. ჩვენ დავამტკიცეთ, რომ როდესაც მთელი ქვეყანა ერთად დგას, შეუძლებელი არაფერია.“
+            </blockquote>
+            <div class="quote-author">— ვილი სანიოლი</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAN ZONE & INTERACTIVE TRIVIA -->
+    <section class="section fanzone-section" id="fanzone">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="sub-badge">FAN ZONE</div>
+          <h2 class="section-title">გულშემატკივრის ზონა & ქვიზი</h2>
+          <p class="section-subtitle">
+            მიეცი ხმა შენს რჩეულ ფეხბურთელს და გამოსცადე ცოდნა საქართველოს ნაკრების შესახებ!
+          </p>
+        </div>
+
+        <div class="fanzone-grid">
+          <!-- MVP Voting Box -->
+          <div class="fanzone-card" id="voting-card">
+            <div class="fanzone-card-header">
+              <span class="fanzone-icon">⭐</span>
+              <h3>აირჩიე შენი ფავორიტი მოთამაშე</h3>
+            </div>
+            <p class="fanzone-desc">რომელი ფეხბურთელია შენთვის ნაკრების მთავარი ლიდერი?</p>
+            
+            <div class="poll-options" id="poll-options">
+              <button class="poll-btn" data-player="kvara">
+                <span class="p-name">ხვიჩა კვარაცხელია</span>
+                <span class="p-pct" id="vote-kvara">46%</span>
               </button>
-              <div class="accordion-panel" id="faq-panel-3">
-                <p>ჩვენ ვიყენებთ უმაღლესი დონის AES-256 დაშიფვრას როგორც გადაცემისას, ისე შენახვისას. სისტემა სრულად აკმაყოფილებს ISO 27001, SOC-2 და GDPR საერთაშორისო უსაფრთხოების სტანდარტებს.</p>
+              <button class="poll-btn" data-player="mamarda">
+                <span class="p-name">გიორგი მამარდაშვილი</span>
+                <span class="p-pct" id="vote-mamarda">31%</span>
+              </button>
+              <button class="poll-btn" data-player="mikautadze">
+                <span class="p-name">გიორგი მიქაუტაძე</span>
+                <span class="p-pct" id="vote-mikautadze">15%</span>
+              </button>
+              <button class="poll-btn" data-player="chakve">
+                <span class="p-name">გიორგი ჩაკვეტაძე</span>
+                <span class="p-pct" id="vote-chakve">8%</span>
+              </button>
+            </div>
+            <div class="vote-feedback" id="vote-feedback">გმადლობთ ხმის მიცემისთვის! ხმა წარმატებით დაფიქსირდა ❤️</div>
+          </div>
+
+          <!-- Trivia Quiz Box -->
+          <div class="fanzone-card" id="quiz-card">
+            <div class="fanzone-card-header">
+              <span class="fanzone-icon">🏆</span>
+              <h3>რამდენად კარგად იცნობ ნაკრებს?</h3>
+            </div>
+            <div class="quiz-container" id="quiz-container">
+              <div class="quiz-step-indicator" id="quiz-progress">კითხვა 1 / 3</div>
+              <div class="quiz-question-box">
+                <h4 class="quiz-question" id="quiz-question-text">ვინ გახდა ევრო 2024-ის ერთ-ერთი ოქროს ბუცის მფლობელი საქართველოს ნაკრებიდან?</h4>
+                <div class="quiz-answers" id="quiz-answers">
+                  <!-- Generated via script.js -->
+                </div>
+              </div>
+              <div class="quiz-result-box" id="quiz-result" style="display: none;">
+                <div class="result-score-title" id="result-score-text">შესანიშნავია! 3 / 3 სწორი პასუხი 🎉</div>
+                <p id="result-desc">შენ ნამდვილი ჯვაროსანი და ერთგული გულშემატკივარი ხარ!</p>
+                <button class="btn btn-secondary btn-sm" id="restart-quiz-btn">თავიდან ცდა</button>
               </div>
             </div>
           </div>
@@ -712,125 +439,70 @@
     </section>
   </main>
 
+  <!-- PLAYER DETAILS MODAL -->
+  <div class="modal-backdrop" id="player-modal-backdrop" aria-hidden="true">
+    <div class="player-modal" id="player-modal" role="dialog" aria-modal="true" aria-labelledby="modal-player-name">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="მოდალის დახურვა">✕</button>
+      
+      <div class="modal-body" id="modal-content">
+        <!-- Rendered dynamically in script.js -->
+      </div>
+    </div>
+  </div>
+
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#hero" class="brand-logo">
-            <div class="logo-icon-box">
-              <svg class="logo-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <span class="logo-text">Nova<span class="logo-gradient">Pulse</span></span>
-          </a>
-          <p class="footer-tagline">
-            ინოვაციური ციფრული ეკოსისტემა, შექმნილი იმისთვის, რომ თქვენი ბიზნესი მუდმივად იყოს ერთი ნაბიჯით წინ.
-          </p>
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo">
+          <span class="flag-icon">🇬🇪</span>
+          <span class="brand-geo">საქართველო • CRUSADERS</span>
         </div>
-
-        <div class="footer-links-group">
-          <div class="footer-col">
-            <h4 class="footer-col-title">ნავიგაცია</h4>
-            <ul>
-              <li><a href="#hero">მთავარი</a></li>
-              <li><a href="#about">ჩვენ შესახებ</a></li>
-              <li><a href="#features">შესაძლებლობები</a></li>
-              <li><a href="#contact">კონტაქტი</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4 class="footer-col-title">პროდუქტები</h4>
-            <ul>
-              <li><a href="#features">Nova AI Engine</a></li>
-              <li><a href="#features">Cloud Sync Core</a></li>
-              <li><a href="#features">Security Shield</a></li>
-              <li><a href="#features">Pulse Analytics</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col newsletter-col">
-            <h4 class="footer-col-title">სიახლეების გამოწერა</h4>
-            <p class="newsletter-desc">მიიღეთ უახლესი ტექნოლოგიური სიახლეები პირდაპირ თქვენს მეილზე.</p>
-            <form class="newsletter-form" id="newsletter-form">
-              <div class="newsletter-input-group">
-                <input type="email" placeholder="თქვენი ელ-ფოსტა" required id="newsletter-email">
-                <button type="submit" class="btn btn-primary btn-newsletter" id="newsletter-submit">გამოწერა</button>
-              </div>
-            </form>
-          </div>
-        </div>
+        <p class="footer-tagline">
+          საქართველოს ეროვნული საფეხბურთო ნაკრების ინტერაქციული საინფორმაციო პლატფორმა. ჩვენ ვართ საქართველო!
+        </p>
       </div>
 
-      <div class="footer-bottom">
-        <p class="copyright">© 2026 NovaPulse Inc. ყველა უფლება დაცულია.</p>
-        <div class="footer-bottom-links">
-          <a href="#">კონფიდენციალურობა</a>
-          <span>•</span>
-          <a href="#">წესები და პირობები</a>
-          <span>•</span>
-          <a href="#">უსაფრთხოება</a>
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <div class="col-title">ნავიგაცია</div>
+          <ul class="col-links">
+            <li><a href="#hero">მთავარი</a></li>
+            <li><a href="#squad">შემადგენლობა</a></li>
+            <li><a href="#history">მატჩები & ისტორია</a></li>
+            <li><a href="#coach">სამწვრთნელო შტაბი</a></li>
+            <li><a href="#fanzone">ფან-ზონა</a></li>
+          </ul>
         </div>
+
+        <div class="footer-col">
+          <div class="col-title">პოზიციები</div>
+          <ul class="col-links">
+            <li><a href="#squad" onclick="window.filterByPosition('GK')">მეკარეები (3)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('DEF')">მცველები (10)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('MID')">ნახევარმცველები (10)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('FWD')">თავდამსხმელები (3)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="col-title">ოფიციალური რესურსები</div>
+          <ul class="col-links">
+            <li><a href="https://nakrebi.ge" target="_blank" rel="noopener noreferrer">GFF — Nakrebi.ge ↗</a></li>
+            <li><a href="https://uefa.com" target="_blank" rel="noopener noreferrer">UEFA Official ↗</a></li>
+            <li><a href="https://transfermarkt.com" target="_blank" rel="noopener noreferrer">Transfermarkt ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>© 2026 საქართველოს ეროვნული ნაკრები. შექმნილია სიყვარულით ქართული ფეხბურთისთვის.</div>
+        <div class="footer-quote">„ძალა ერთობაშია!“ 🇬🇪</div>
       </div>
     </div>
   </footer>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" id="back-to-top" aria-label="ზემოთ დაბრუნება" title="ზემოთ ასვლა">
-    <svg class="progress-ring" width="48" height="48">
-      <circle class="progress-ring-circle" stroke="currentColor" stroke-width="3" fill="transparent" r="21" cx="24" cy="24" />
-    </svg>
-    <svg class="arrow-up-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-      <line x1="12" y1="19" x2="12" y2="5"></line>
-      <polyline points="5 12 12 5 19 12"></polyline>
-    </svg>
-  </button>
-
-  <!-- Interactive Feature Modal -->
-  <div class="modal-overlay" id="feature-modal" aria-hidden="true" role="dialog">
-    <div class="modal-card glass-card">
-      <button class="modal-close-btn" id="modal-close" aria-label="მოდალის დახურვა">&times;</button>
-      <div class="modal-header">
-        <div class="modal-icon-badge" id="modal-icon">⚡</div>
-        <div>
-          <h3 class="modal-title" id="modal-title">ფუნქციის დასახელება</h3>
-          <span class="modal-category" id="modal-cat">კატეგორია</span>
-        </div>
-      </div>
-      <div class="modal-body" id="modal-body">
-        <p>დეტალური ინფორმაცია ფუნქციის შესახებ...</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#contact" class="btn btn-primary" id="modal-cta-btn">დაგვიკავშირდით დეტალებისთვის</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Interactive Demo Video Modal -->
-  <div class="modal-overlay" id="demo-modal" aria-hidden="true" role="dialog">
-    <div class="modal-card glass-card demo-modal-card">
-      <button class="modal-close-btn" id="demo-close" aria-label="მოდალის დახურვა">&times;</button>
-      <div class="demo-modal-header">
-        <h3>🎬 NovaPulse პლატფორმის ინტერაქტიული დემო</h3>
-      </div>
-      <div class="demo-video-simulation">
-        <img src="assets/hero.jpg" alt="Interactive Live Demo" class="demo-screen-img">
-        <div class="demo-play-overlay">
-          <div class="simulated-badge">⚡ რეალური დროის მონიტორინგი ჩართულია</div>
-          <div class="demo-stats-row">
-            <span>Latency: 12ms</span>
-            <span>Uptime: 100%</span>
-            <span>AI Status: Active</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Interactive Toast Notification Container -->
-  <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>
