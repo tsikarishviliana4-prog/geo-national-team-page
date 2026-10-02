@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ka" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ქართული საფეხბურთო კლუბები — ეროვნული ლიგა და ისტორია</title>
+  <meta name="description" content="საქართველოს საფეხბურთო კლუბები, Crystalbet ეროვნული ლიგა: დინამო თბილისი, ტორპედო ქუთაისი, დინამო ბათუმი, იბერია 1999, დილა გორი. ისტორია, ტიტულები და სტადიონები.">
+  <meta name="keywords" content="ქართული კლუბები, ეროვნული ლიგა, დინამო თბილისი, ტორპედო ქუთაისი, დინამო ბათუმი, დილა გორი, იბერია 1999, ქართული ფეხბურთი">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Atmospheric Glows -->
+  <div class="ambient-glow glow-red" aria-hidden="true"></div>
+  <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="main-header">
+    <nav class="navbar container" aria-label="მთავარი ნავიგაცია">
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="საქართველოს ნაკრები მთავარი">
+        <div class="crest-box">
+          <span class="flag-icon">🇬🇪</span>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-geo">საქართველო</span>
+          <span class="brand-sub">EROVNULI LIGA • ქართული კლუბები</span>
+        </div>
+      </a>
+
+      <!-- Super-Convenient Top Page Switcher -->
+      <div class="top-view-switcher" role="navigation" aria-label="გვერდის გადართვა">
+        <a href="index.html" class="switcher-pill" id="switch-national">
+          <span>🇬🇪</span>
+          <span>ნაკრები</span>
+          <span class="switcher-badge">23</span>
+        </a>
+        <a href="clubs.html" class="switcher-pill active clubs-active" id="switch-clubs">
+          <span>⚽</span>
+          <span>კლუბები</span>
+          <span class="switcher-badge">10</span>
+        </a>
+      </div>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" id="nav-link-national">🇬🇪 ეროვნული ნაკრები</a></li>
+        <li><a href="clubs.html" class="nav-link active clubs-highlight-link" id="nav-link-clubs">ქართული კლუბები ⚽</a></li>
+        <li><a href="#clubs-list" class="nav-link" id="nav-link-all-clubs">კლუბების სია</a></li>
+        <li><a href="#league-history" class="nav-link" id="nav-link-league-history">ლიგის ისტორია</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="ფერების თემის შეცვლა" title="დღის / ღამის რეჟიმი">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Back to National Team -->
+        <a href="index.html" class="btn btn-primary nav-cta" id="nav-back-national">
+          <span>ნაკრების გვერდი</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="მენიუს გახსნა" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-links">
+        <li><a href="index.html" class="mobile-link">🇬🇪 ეროვნული ნაკრები</a></li>
+        <li><a href="clubs.html" class="mobile-link active" style="color: var(--geo-gold); font-weight: 700;">ქართული კლუბები ⚽</a></li>
+        <li><a href="#clubs-list" class="mobile-link">კლუბების სია</a></li>
+        <li><a href="#league-history" class="mobile-link">ლიგის ისტორია</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="index.html" class="btn btn-primary w-full">ნაკრების შემადგენლობაზე დაბრუნება</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero-clubs" style="min-height: 60vh; padding: 70px 0 50px;">
+      <div class="container hero-container">
+        <div class="hero-badge reveal-fade-up">
+          <span class="badge-dot" style="background: var(--geo-gold); box-shadow: 0 0 8px var(--geo-gold);"></span>
+          <span class="badge-text" style="color: var(--geo-gold);">CRYSTALBET ეროვნული ლიგა • ქართული საკლუბო ფეხბურთი</span>
+        </div>
+
+        <h1 class="hero-title reveal-fade-up" style="animation-delay: 0.1s;">
+          ქართული საფეხბურთო 
+          <span class="title-highlight" style="background: linear-gradient(135deg, #ffffff 10%, #fbbf24 70%, #f59e0b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">კლუბები და ისტორია</span>
+        </h1>
+
+        <p class="hero-description reveal-fade-up" style="animation-delay: 0.2s;">
+          1981 წლის დიუსელდორფის ევროპული ტრიუმფიდან თანამედროვე ეროვნულ ლიგამდე. გაეცანით საქართველოს წამყვან საფეხბურთო კლუბებს, მათ ტიტულებს, სტადიონებსა და ლეგენდებს.
+        </p>
+
+        <!-- Quick League Stat Bar -->
+        <div class="hero-stats-grid reveal-fade-up" style="animation-delay: 0.3s;">
+          <div class="stat-card">
+            <div class="stat-number">10</div>
+            <div class="stat-label">ეროვნული ლიგის კლუბი</div>
+          </div>
+          <div class="stat-card highlight-stat">
+            <div class="stat-number">1981</div>
+            <div class="stat-label">უეფას თასების მფლობელთა თასი</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">19x</div>
+            <div class="stat-label">რეკორდსმენი (დინამო თბ.)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1913</div>
+            <div class="stat-label">პირველი კლუბი („კოლხეთი“)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLUBS HUB SECTION -->
+    <section class="section squad-section" id="clubs-list">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="sub-badge">GEORGIAN FOOTBALL CLUBS</div>
+          <h2 class="section-title">საქართველოს საფეხბურთო კლუბები</h2>
+          <p class="section-subtitle">
+            იხილეთ კლუბების დაარსების თარიღები, საშინაო არენები, საპატიო ტიტულები და რეგიონები. გამოიყენეთ ფილტრები და ძებნა.
+          </p>
+        </div>
+
+        <!-- Controls Bar -->
+        <div class="squad-controls-bar">
+          <!-- Search Box -->
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="club-search" class="search-input" placeholder="მოძებნე კლუბი, ქალაქი ან სტადიონი (მაგ. დინამო, ტორპედო, ბათუმი, არენა)..." autocomplete="off">
+            <button class="clear-search-btn" id="clear-club-search" aria-label="ძებნის გასუფთავება" style="display: none;">✕</button>
+          </div>
+
+          <!-- Quick City Search Chips -->
+          <div class="quick-tags-row">
+            <span class="quick-tags-label">⚡ სწრაფი არჩევა:</span>
+            <button class="quick-tag-chip club-quick-tag" data-query="თბილისი">📍 თბილისი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="ქუთაისი">📍 ქუთაისი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="ბათუმი">📍 ბათუმი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="გორი">📍 გორი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="წყალტუბო">📍 წყალტუბო</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="ფოთი">📍 ფოთი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="ბოლნისი">📍 ბოლნისი</button>
+            <button class="quick-tag-chip club-quick-tag" data-query="თელავი">📍 თელავი</button>
+          </div>
+
+          <!-- Region Filter Tabs -->
+          <div class="filter-tabs-wrapper">
+            <div class="filter-section-title">
+              <span>🗺️ აირჩიე რეგიონი:</span>
+            </div>
+            <div class="filter-tabs" id="region-filters" role="tablist">
+              <button class="filter-tab active" data-region="ALL" role="tab" aria-selected="true">
+                <span>🇬🇪 ყველა კლუბი</span>
+                <span class="count-pill" id="club-count-all">10</span>
+              </button>
+              <button class="filter-tab" data-region="თბილისი" role="tab" aria-selected="false">
+                <span>📍 თბილისი</span>
+                <span class="count-pill">3</span>
+              </button>
+              <button class="filter-tab" data-region="იმერეთი" role="tab" aria-selected="false">
+                <span>📍 იმერეთი</span>
+                <span class="count-pill">2</span>
+              </button>
+              <button class="filter-tab" data-region="აჭარა" role="tab" aria-selected="false">
+                <span>📍 აჭარა</span>
+                <span class="count-pill">1</span>
+              </button>
+              <button class="filter-tab" data-region="შიდა ქართლი" role="tab" aria-selected="false">
+                <span>📍 შიდა ქართლი</span>
+                <span class="count-pill">1</span>
+              </button>
+              <button class="filter-tab" data-region="კახეთი / სამეგრელო / ქვემო ქართლი" data-alias="REGIONS" role="tab" aria-selected="false">
+                <span>📍 სხვა რეგიონები</span>
+                <span class="count-pill">3</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 1-Tap Quick Sort Chips Bar -->
+          <div class="sort-chips-bar">
+            <div class="filter-section-title">
+              <span>🔃 დალაგება 1 დაწკაპუნებით:</span>
+            </div>
+            <div class="sort-chips-group" id="club-sort-chips-group">
+              <button class="sort-chip-btn active" data-sort="trophies-desc">
+                <span>🏆 ტიტულებით</span>
+              </button>
+              <button class="sort-chip-btn" data-sort="year-asc">
+                <span>📅 დაარსებით (უძველესიდან)</span>
+              </button>
+              <button class="sort-chip-btn" data-sort="stadium-desc">
+                <span>🏟️ სტადიონის ტევადობით</span>
+              </button>
+              <button class="sort-chip-btn" data-sort="name-asc">
+                <span>🔤 სახელით (ა-ჰ)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Status Row -->
+        <div class="filter-status-row">
+          <span class="results-text" id="club-results-count">ნაჩვენებია 10 კლუბი</span>
+          <button class="reset-filter-btn" id="club-reset-btn" style="display: none;">ყველას ნახვა</button>
+        </div>
+
+        <!-- Clubs Grid -->
+        <div class="clubs-grid" id="clubs-grid">
+          <!-- Dynamically populated via JS below -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results-box" id="no-club-results" style="display: none;">
+          <div class="no-results-icon">🔍</div>
+          <h3>კლუბი ვერ მოიძებნა</h3>
+          <p>სცადეთ სხვა საძიებო სიტყვა (მაგალითად: „დინამო“, „ტორპედო“, „ბათუმი“, „გორი“).</p>
+          <button class="btn btn-secondary" id="empty-club-reset-btn">ფილტრის გასუფთავება</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAGUE HISTORY & GLORY -->
+    <section class="section history-section" id="league-history">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="sub-badge">EUROPEAN TRIUMPH</div>
+          <h2 class="section-title">ქართული საკლუბო ფეხბურთის დიდება</h2>
+          <p class="section-subtitle">
+            მსოფლიო დონის მიღწევა, რომლითაც ქართული სპორტი ამაყობს.
+          </p>
+        </div>
+
+        <div class="history-grid">
+          <div class="history-card feature-glow">
+            <div class="history-tag euro-tag" style="background: rgba(245, 158, 11, 0.2); color: var(--geo-gold); border-color: rgba(245, 158, 11, 0.5);">
+              🏆 13 მაისი, 1981 • დიუსელდორფი
+            </div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🔵⚪</span>
+                <span class="team-name">დინამო თბილისი</span>
+              </div>
+              <div class="score-pill">2 : 1</div>
+              <div class="team team-opp">
+                <span class="flag-lg">🇩🇪</span>
+                <span class="team-name">კარლ ცაისი (იენა)</span>
+              </div>
+            </div>
+            <div class="scorers-list">
+              <div class="scorer">⚽ ვლადიმერ გუცაევი 67'</div>
+              <div class="scorer">⚽ ვიტალი დარასელია 87' (ისტორიული გამარჯვების გოლი!)</div>
+            </div>
+            <p class="history-desc">
+              ნოდარ ახალკაცის ხელმძღვანელობით „დინამო თბილისმა“ ევროპის უეფას თასების მფლობელთა თასი მოიპოვა! დავით ყიფიანი, ალექსანდრე ჩივაძე, რამაზ შენგელია და ვიტალი დარასელია ოქროს ასოებით ჩაეწერნენ მსოფლიო ფეხბურთის ისტორიაში.
+            </p>
+          </div>
+
+          <div class="history-card">
+            <div class="history-tag play-tag">ეროვნული ჩემპიონატის დაარსება • 1990</div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🇬🇪</span>
+                <span class="team-name">საქართველოს ჩემპიონატი</span>
+              </div>
+              <div class="score-pill">1990-დღემდე</div>
+            </div>
+            <p class="history-desc">
+              1990 წლის 30 მარტს ჩატარდა დამოუკიდებელი საქართველოს პირველი ეროვნული ჩემპიონატის მატჩი. მას შემდეგ ქართული კლუბები ყოველწლიურად იბრძვიან საჩემპიონო ტიტულისა და ევროტურნირების საგზურებისთვის.
+            </p>
+          </div>
+
+          <div class="history-card">
+            <div class="history-tag nl-tag">თანამედროვე ინფრასტრუქტურა & არენები</div>
+            <div class="match-score-box">
+              <div class="team team-geo">
+                <span class="flag-lg">🏟️</span>
+                <span class="team-name">უეფას IV კატეგორიის არენები</span>
+              </div>
+              <div class="score-pill">UEFA IV</div>
+            </div>
+            <p class="history-desc">
+              „დინამო არენა“ თბილისში და ულტრათანამედროვე „აჭარაბეთ არენა“ ბათუმში აკმაყოფილებენ უეფას უმაღლეს სტანდარტებს, სადაც ჩატარდა უეფას სუპერთასი (2015) და 21-წლამდე ევროპის ჩემპიონატის ფინალი (2023).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CLUB DETAILS MODAL -->
+  <div class="modal-backdrop" id="club-modal-backdrop" aria-hidden="true">
+    <div class="player-modal" id="club-modal" role="dialog" aria-modal="true" aria-labelledby="modal-club-name">
+      <button class="modal-close-btn" id="club-modal-close-btn" aria-label="მოდალის დახურვა">✕</button>
+      <div class="modal-body" id="club-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo">
+          <span class="flag-icon">🇬🇪</span>
+          <span class="brand-geo">საქართველო • CRUSADERS</span>
+        </div>
+        <p class="footer-tagline">
+          საქართველოს ეროვნული საფეხბურთო ნაკრებისა და ქართული კლუბების ოფიციალური საინფორმაციო პლატფორმა.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <div class="col-title">ნავიგაცია</div>
+          <ul class="col-links">
+            <li><a href="index.html">🇬🇪 ეროვნული ნაკრები</a></li>
+            <li><a href="clubs.html">ქართული კლუბები ⚽</a></li>
+            <li><a href="#clubs-list">კლუბების სია</a></li>
+            <li><a href="#league-history">ლიგის ისტორია</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="col-title">კლუბები რეგიონებით</div>
+          <ul class="col-links">
+            <li><a href="#clubs-list" onclick="window.filterClubsByRegion('თბილისი')">თბილისის კლუბები</a></li>
+            <li><a href="#clubs-list" onclick="window.filterClubsByRegion('იმერეთი')">იმერეთის კლუბები</a></li>
+            <li><a href="#clubs-list" onclick="window.filterClubsByRegion('აჭარა')">აჭარის კლუბები</a></li>
+            <li><a href="#clubs-list" onclick="window.filterClubsByRegion('შიდა ქართლი')">შიდა ქართლი</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="col-title">ოფიციალური რესურსები</div>
+          <ul class="col-links">
+            <li><a href="https://erovnuliliga.ge" target="_blank" rel="noopener noreferrer">ეროვნული ლიგა (Erovnuliliga.ge) ↗</a></li>
+            <li><a href="https://gff.ge" target="_blank" rel="noopener noreferrer">საქართველოს ფეხბურთის ფედერაცია ↗</a></li>
+            <li><a href="https://uefa.com" target="_blank" rel="noopener noreferrer">UEFA Official ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div>© 2026 ქართული საკლუბო ფეხბურთი. შექმნილია სიყვარულით ქართული ფეხბურთისთვის.</div>
+        <div class="footer-quote">„ძალა ერთობაშია!“ 🇬🇪</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR CLUBS PAGE -->
+  <script>
+    // -------------------------------------------------------------------------
+    // Georgian Football Clubs Data (10 Major Clubs)
+    // -------------------------------------------------------------------------
+    const CLUBS_DATA = [
+      {
+        id: "dinamo-tbilisi",
+        nameKa: "დინამო თბილისი",
+        nameEn: "FC Dinamo Tbilisi",
+        city: "თბილისი",
+        region: "თბილისი",
+        year: 1925,
+        stadium: "დინამო არენა (ბორის პაიჭაძე)",
+        capacity: 54549,
+        crestIcon: "🔵⚪",
+        crestBg: "linear-gradient(135deg, #1e3a8a, #0284c7)",
+        titlesLeague: 19,
+        titlesCup: 13,
+        titlesSupercup: 9,
+        euroTitle: "უეფას თასების მფლობელთა თასი (1981)",
+        legends: "დავით ყიფიანი, მიხეილ მესხი, ალექსანდრე ჩივაძე, ვიტალი დარასელია, რამაზ შენგელია",
+        desc: "ქართული ფეხბურთის ფლაგმანი და ყველაზე ტიტულოვანი კლუბი. 1981 წელს მოიპოვა ევროპის უეფას თასების მფლობელთა თასი. 19-გზის საქართველოს და 2-გზის სსრკ ჩემპიონი.",
+        totalTrophies: 42
+      },
+      {
+        id: "torpedo-kutaisi",
+        nameKa: "ტორპედო ქუთაისი",
+        nameEn: "FC Torpedo Kutaisi",
+        city: "ქუთაისი",
+        region: "იმერეთი",
+        year: 1946,
+        stadium: "რამაზ შენგელიას სახელობის სტადიონი",
+        capacity: 12000,
+        crestIcon: "🟢⚪",
+        crestBg: "linear-gradient(135deg, #065f46, #10b981)",
+        titlesLeague: 4,
+        titlesCup: 5,
+        titlesSupercup: 3,
+        euroTitle: "",
+        legends: "გივი ნოდია, რევაზ ძოძუაშვილი, მამუკა ხუნდაძე",
+        desc: "დასავლეთ საქართველოს უდიდესი ტრადიციის მქონე კლუბი. 4-გზის საქართველოს ჩემპიონი და 5-გზის თასის მფლობელი თავდადებული გულშემატკივრებით.",
+        totalTrophies: 12
+      },
+      {
+        id: "dinamo-batumi",
+        nameKa: "დინამო ბათუმი",
+        nameEn: "FC Dinamo Batumi",
+        city: "ბათუმი",
+        region: "აჭარა",
+        year: 1923,
+        stadium: "აჭარაბეთ არენა (ბათუმი)",
+        capacity: 20035,
+        crestIcon: "⚪🔵",
+        crestBg: "linear-gradient(135deg, #0369a1, #38bdf8)",
+        titlesLeague: 2,
+        titlesCup: 1,
+        titlesSupercup: 2,
+        euroTitle: "",
+        legends: "ხვიჩა კვარაცხელია (2022), ირაკლი აზაროვი, ასლან ბალაძე",
+        desc: "ზღვისპირეთის სიამაყე. 2021 და 2023 წლების საქართველოს ჩემპიონი, რომელსაც ქვეყანაში ერთ-ერთი ყველაზე თანამედროვე 20,000-იანი არენა აქვს.",
+        totalTrophies: 5
+      },
+      {
+        id: "iberia-1999",
+        nameKa: "იბერია 1999 (საბურთალო)",
+        nameEn: "FC Iberia 1999",
+        city: "თბილისი",
+        region: "თბილისი",
+        year: 1999,
+        stadium: "მიხეილ მესხი II",
+        capacity: 2500,
+        crestIcon: "🔴⚪",
+        crestBg: "linear-gradient(135deg, #b91c1c, #ef4444)",
+        titlesLeague: 1,
+        titlesCup: 3,
+        titlesSupercup: 1,
+        euroTitle: "",
+        legends: "გიორგი ქოჩორაშვილი (აღზრდილი), გიორგი გოჩოლეიშვილი",
+        desc: "ქვეყნის ერთ-ერთი საუკეთესო საფეხბურთო აკადემია, რომელმაც ეროვნულ ნაკრებს არაერთი ვარსკვლავი აღუზარდა. საქართველოს ჩემპიონი და თასის მრავალგზის მფლობელი.",
+        totalTrophies: 5
+      },
+      {
+        id: "dila-gori",
+        nameKa: "დილა გორი",
+        nameEn: "FC Dila Gori",
+        city: "გორი",
+        region: "შიდა ქართლი",
+        year: 1949,
+        stadium: "თენგიზ ბურჯანაძის სახელობის სტადიონი",
+        capacity: 5000,
+        crestIcon: "🔴🔵",
+        crestBg: "linear-gradient(135deg, #991b1b, #1d4ed8)",
+        titlesLeague: 1,
+        titlesCup: 1,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "გიორგი გაბედავა, ოთარ კიტეიშვილი (ახალგაზრდობა)",
+        desc: "2015 წლის საქართველოს ჩემპიონი და 2012 წლის თასის მფლობელი. გამორჩეული ევროთასების ბრძოლებითა და ხარისხიანი თამაშით.",
+        totalTrophies: 2
+      },
+      {
+        id: "samgurali",
+        nameKa: "სამგურალი წყალტუბო",
+        nameEn: "FC Samgurali Tskhaltubo",
+        city: "წყალტუბო",
+        region: "იმერეთი",
+        year: 1945,
+        stadium: "26 მაისის სახელობის სტადიონი",
+        capacity: 3500,
+        crestIcon: "🟢🟡",
+        crestBg: "linear-gradient(135deg, #15803d, #ca8a04)",
+        titlesLeague: 0,
+        titlesCup: 0,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "გიორგი ფანცულაია, კახა კაკუშაძე",
+        desc: "წყალტუბოს ტრადიციული კლუბი, საბჭოთა საქართველოს 3-გზის ჩემპიონი და დავით ყიფიანის თასის ფინალისტი.",
+        totalTrophies: 3
+      },
+      {
+        id: "gagra",
+        nameKa: "გაგრა",
+        nameEn: "FC Gagra",
+        city: "თბილისი / გაგრა",
+        region: "თბილისი",
+        year: 2004,
+        stadium: "ილია კოკაიას სახელობის სტადიონი",
+        capacity: 1500,
+        crestIcon: "🔵🟡",
+        crestBg: "linear-gradient(135deg, #1e40af, #eab308)",
+        titlesLeague: 0,
+        titlesCup: 2,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "თორნიკე ოქრიაშვილი (აღზრდილი), გიორგი ჭანტურია",
+        desc: "საქართველოს დავით ყიფიანის სახელობის თასის ორგზის გამარჯვებული (2011, 2020), ცნობილი ახალგაზრდა ტალანტების აღზრდით.",
+        totalTrophies: 2
+      },
+      {
+        id: "telavi",
+        nameKa: "თელავი",
+        nameEn: "FC Telavi",
+        city: "თელავი",
+        region: "კახეთი",
+        year: 2016,
+        stadium: "გივი ჩოხელის სახელობის სტადიონი",
+        capacity: 12000,
+        crestIcon: "🟣⚪",
+        crestBg: "linear-gradient(135deg, #6b21a8, #a855f7)",
+        titlesLeague: 0,
+        titlesCup: 0,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "გივი ჩოხელი (თელავის ლეგენდა, 1960 წლის ევროპის ჩემპიონი)",
+        desc: "კახეთის რეგიონის მთავარი საფეხბურთო წარმომადგენელი უმაღლეს ლიგაში. ატარებს ლეგენდარული ქართველი მცველის, გივი ჩოხელის სახელს.",
+        totalTrophies: 0
+      },
+      {
+        id: "kolkheti-poti",
+        nameKa: "კოლხეთი 1913 ფოთი",
+        nameEn: "FC Kolkheti 1913 Poti",
+        city: "ფოთი",
+        region: "სამეგრელო",
+        year: 1913,
+        stadium: "ფაზისის სტადიონი",
+        capacity: 6000,
+        crestIcon: "🔵⚪",
+        crestBg: "linear-gradient(135deg, #1d4ed8, #60a5fa)",
+        titlesLeague: 0,
+        titlesCup: 0,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "ჯუმბერ კანკავა, ბორის კაჭარავა",
+        desc: "საქართველოს უძველესი საფეხბურთო კლუბი, დაარსებული 1913 წელს. საქართველოს ეროვნული ჩემპიონატის ორგზის ვიცე-ჩემპიონი (1994, 1997).",
+        totalTrophies: 2
+      },
+      {
+        id: "sioni-bolnisi",
+        nameKa: "სიონი ბოლნისი",
+        nameEn: "FC Sioni Bolnisi",
+        city: "ბოლნისი",
+        region: "ქვემო ქართლი",
+        year: 1936,
+        stadium: "თამაზ სტეფანიას სახელობის სტადიონი",
+        capacity: 3000,
+        crestIcon: "🟡🔴",
+        crestBg: "linear-gradient(135deg, #ca8a04, #dc2626)",
+        titlesLeague: 1,
+        titlesCup: 0,
+        titlesSupercup: 0,
+        euroTitle: "",
+        legends: "კახა გოგიჩაიშვილი, გიორგი დარასელია",
+        desc: "2006 წლის საქართველოს ჩემპიონი. ქვემო ქართლის ტრადიციული და შეუპოვარი გუნდი.",
+        totalTrophies: 1
+      }
+    ];
+
+    // -------------------------------------------------------------------------
+    // State & DOM
+    // -------------------------------------------------------------------------
+    let currentRegion = "ALL";
+    let clubSearchQuery = "";
+    let currentClubSort = "trophies-desc";
+
+    const clubsGrid = document.getElementById("clubs-grid");
+    const clubSearchInput = document.getElementById("club-search");
+    const clearClubSearch = document.getElementById("clear-club-search");
+    const regionTabs = document.querySelectorAll("#region-filters .filter-tab");
+    const clubSortSelect = document.getElementById("club-sort-select");
+    const clubResultsCount = document.getElementById("club-results-count");
+    const clubResetBtn = document.getElementById("club-reset-btn");
+    const noClubResults = document.getElementById("no-club-results");
+    const emptyClubResetBtn = document.getElementById("empty-club-reset-btn");
+
+    // Modal
+    const clubModalBackdrop = document.getElementById("club-modal-backdrop");
+    const clubModalContent = document.getElementById("club-modal-content");
+    const clubModalCloseBtn = document.getElementById("club-modal-close-btn");
+
+    // Theme & Mobile
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const mobileToggleBtn = document.getElementById("mobile-toggle");
+    const mobileDrawer = document.getElementById("mobile-drawer");
+
+    // -------------------------------------------------------------------------
+    // Filtering & Sorting
+    // -------------------------------------------------------------------------
+    function getFilteredClubs() {
+      const q = clubSearchQuery.trim().toLowerCase();
+
+      let list = CLUBS_DATA.filter(c => {
+        // Region filter
+        let matchRegion = false;
+        if (currentRegion === "ALL") {
+          matchRegion = true;
+        } else if (currentRegion === "REGIONS") {
+          matchRegion = (c.region === "კახეთი" || c.region === "სამეგრელო" || c.region === "ქვემო ქართლი");
+        } else {
+          matchRegion = (c.region === currentRegion);
+        }
+
+        if (!matchRegion) return false;
+
+        // Search query
+        if (!q) return true;
+        return c.nameKa.toLowerCase().includes(q) ||
+               c.nameEn.toLowerCase().includes(q) ||
+               c.city.toLowerCase().includes(q) ||
+               c.stadium.toLowerCase().includes(q);
+      });
+
+      // Sort
+      list.sort((a, b) => {
+        if (currentClubSort === "trophies-desc") return b.totalTrophies - a.totalTrophies;
+        if (currentClubSort === "year-asc") return a.year - b.year;
+        if (currentClubSort === "name-asc") return a.nameKa.localeCompare(b.nameKa, 'ka');
+        if (currentClubSort === "stadium-desc") return b.capacity - a.capacity;
+        return 0;
+      });
+
+      return list;
+    }
+
+    function renderClubs() {
+      const clubs = getFilteredClubs();
+
+      clubResultsCount.textContent = `ნაჩვენებია ${clubs.length} კლუბი`;
+      clubResetBtn.style.display = (currentRegion !== "ALL" || clubSearchQuery.length > 0) ? "inline-block" : "none";
+
+      if (clubs.length === 0) {
+        clubsGrid.innerHTML = "";
+        noClubResults.style.display = "block";
+        return;
+      }
+
+      noClubResults.style.display = "none";
+
+      clubsGrid.innerHTML = clubs.map(club => `
+        <article class="club-card" data-id="${club.id}" tabindex="0" role="button" aria-label="${club.nameKa} — დეტალების ნახვა">
+          <div class="club-header-row">
+            <span class="club-city-tag">📍 ${club.city}</span>
+            <span class="club-year-tag">დაარსდა: ${club.year} წ.</span>
+          </div>
+
+          <div class="club-identity">
+            <div class="club-crest" style="background: ${club.crestBg};">
+              <span>${club.crestIcon}</span>
+            </div>
+            <div class="club-names">
+              <h3 class="club-name-ka">${club.nameKa}</h3>
+              <span class="club-name-en">${club.nameEn}</span>
+            </div>
+          </div>
+
+          <div class="club-stadium-box">
+            <span class="stadium-icon">🏟️</span>
+            <div class="stadium-info">
+              <span class="stadium-name">${club.stadium}</span>
+              <span class="stadium-cap">ტევადობა: ${club.capacity.toLocaleString()} მაყურებელი</span>
+            </div>
+          </div>
+
+          <div class="club-trophies-row">
+            ${club.euroTitle ? `<span class="trophy-badge euro-winner">🏆 ${club.euroTitle}</span>` : ''}
+            ${club.titlesLeague > 0 ? `<span class="trophy-badge">🏆 ${club.titlesLeague}x ჩემპიონი</span>` : ''}
+            ${club.titlesCup > 0 ? `<span class="trophy-badge">🥇 ${club.titlesCup}x თასი</span>` : ''}
+            ${club.titlesSupercup > 0 ? `<span class="trophy-badge">⭐ ${club.titlesSupercup}x სუპერთასი</span>` : ''}
+          </div>
+
+          <p class="club-desc">${club.desc}</p>
+
+          <div class="club-legends-box">
+            <span class="club-legends-title">ლეგენდები:</span>
+            <span>${club.legends}</span>
+          </div>
+
+          <button class="card-btn" aria-hidden="true" tabindex="-1">
+            <span>სრული ანკეტა</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </article>
+      `).join("");
+
+      document.querySelectorAll(".club-card").forEach(card => {
+        card.addEventListener("click", () => {
+          openClubModal(card.getAttribute("data-id"));
+        });
+        card.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openClubModal(card.getAttribute("data-id"));
+          }
+        });
+      });
+    }
+
+    function openClubModal(clubId) {
+      const c = CLUBS_DATA.find(x => x.id === clubId);
+      if (!c) return;
+
+      clubModalContent.innerHTML = `
+        <div class="modal-jersey-bg" style="font-size: 5rem;">${c.year}</div>
+
+        <div class="modal-header-section">
+          <div class="club-crest" style="background: ${c.crestBg}; width: 80px; height: 80px; font-size: 2.2rem;">
+            <span>${c.crestIcon}</span>
+          </div>
+          <div class="modal-titles">
+            <h2 class="modal-player-name" id="modal-club-name">${c.nameKa}</h2>
+            <div class="modal-player-en">${c.nameEn} • დაარსდა ${c.year} წელს</div>
+            <div class="modal-badges-row">
+              <span class="club-city-tag">📍 ${c.city} (${c.region})</span>
+              <span class="crew-pill">სტადიონი: ${c.capacity.toLocaleString()}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-info-grid">
+          <div class="info-item">
+            <span class="info-lbl">საშინაო სტადიონი</span>
+            <span class="info-val">${c.stadium}</span>
+          </div>
+          <div class="info-item">
+            <span class="info-lbl">ტევადობა</span>
+            <span class="info-val">${c.capacity.toLocaleString()} ადგილი</span>
+          </div>
+          <div class="info-item">
+            <span class="info-lbl">საქართველოს ჩემპიონობა</span>
+            <span class="info-val" style="color: var(--geo-gold);">${c.titlesLeague} ტიტული</span>
+          </div>
+          <div class="info-item">
+            <span class="info-lbl">საქართველოს თასი</span>
+            <span class="info-val">${c.titlesCup} ტიტული</span>
+          </div>
+        </div>
+
+        <div class="modal-bio-box">
+          <div class="modal-bio-title">კლუბის ისტორია & მიღწევები</div>
+          <p class="modal-bio-text">${c.desc}</p>
+        </div>
+
+        <div class="modal-bio-box">
+          <div class="modal-bio-title">კლუბის გამორჩეული ლეგენდები</div>
+          <p class="modal-bio-text" style="color: var(--geo-gold); font-weight: 600;">${c.legends}</p>
+        </div>
+
+        ${c.euroTitle ? `
+          <div class="player-highlight-badge" style="justify-content: center; font-size: 0.95rem; padding: 12px;">
+            <span>🏆</span>
+            <span>${c.euroTitle}</span>
+          </div>
+        ` : ''}
+      `;
+
+      clubModalBackdrop.classList.add("active");
+      clubModalBackdrop.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeClubModal() {
+      clubModalBackdrop.classList.remove("active");
+      clubModalBackdrop.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // -------------------------------------------------------------------------
+    // Event Handlers
+    // -------------------------------------------------------------------------
+    clubSearchInput.addEventListener("input", (e) => {
+      clubSearchQuery = e.target.value;
+      clearClubSearch.style.display = clubSearchQuery ? "flex" : "none";
+      renderClubs();
+    });
+
+    clearClubSearch.addEventListener("click", () => {
+      clubSearchInput.value = "";
+      clubSearchQuery = "";
+      clearClubSearch.style.display = "none";
+      clubSearchInput.focus();
+      renderClubs();
+    });
+
+    regionTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        regionTabs.forEach(t => {
+          t.classList.remove("active");
+          t.setAttribute("aria-selected", "false");
+        });
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+
+        currentRegion = tab.getAttribute("data-alias") || tab.getAttribute("data-region");
+        renderClubs();
+      });
+    });
+
+    // Quick City Search Preset Chips
+    const clubQuickTags = document.querySelectorAll(".club-quick-tag");
+    clubQuickTags.forEach(chip => {
+      chip.addEventListener("click", () => {
+        const q = chip.getAttribute("data-query");
+        if (clubSearchQuery === q) {
+          clubSearchInput.value = "";
+          clubSearchQuery = "";
+          chip.classList.remove("active-tag");
+          clearClubSearch.style.display = "none";
+        } else {
+          clubSearchInput.value = q;
+          clubSearchQuery = q;
+          clubQuickTags.forEach(c => c.classList.remove("active-tag"));
+          chip.classList.add("active-tag");
+          clearClubSearch.style.display = "flex";
+        }
+        renderClubs();
+      });
+    });
+
+    // 1-Tap Quick Sort Chips for Clubs
+    const clubSortChipBtns = document.querySelectorAll("#club-sort-chips-group .sort-chip-btn");
+    clubSortChipBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        clubSortChipBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentClubSort = btn.getAttribute("data-sort");
+        if (clubSortSelect) clubSortSelect.value = currentClubSort;
+        renderClubs();
+      });
+    });
+
+    if (clubSortSelect) {
+      clubSortSelect.addEventListener("change", (e) => {
+        currentClubSort = e.target.value;
+        clubSortChipBtns.forEach(b => b.classList.toggle("active", b.getAttribute("data-sort") === currentClubSort));
+        renderClubs();
+      });
+    }
+
+    function resetAllClubFilters() {
+      currentRegion = "ALL";
+      clubSearchQuery = "";
+      clubSearchInput.value = "";
+      clearClubSearch.style.display = "none";
+      clubQuickTags.forEach(c => c.classList.remove("active-tag"));
+
+      regionTabs.forEach(t => {
+        t.classList.toggle("active", t.getAttribute("data-region") === "ALL");
+        t.setAttribute("aria-selected", t.getAttribute("data-region") === "ALL" ? "true" : "false");
+      });
+
+      currentClubSort = "trophies-desc";
+      clubSortChipBtns.forEach(b => b.classList.toggle("active", b.getAttribute("data-sort") === "trophies-desc"));
+      if (clubSortSelect) clubSortSelect.value = "trophies-desc";
+
+      renderClubs();
+    }
+
+    clubResetBtn.addEventListener("click", resetAllClubFilters);
+    emptyClubResetBtn.addEventListener("click", resetAllClubFilters);
+
+    window.filterClubsByRegion = function(reg) {
+      const tab = Array.from(regionTabs).find(t => t.getAttribute("data-region") === reg);
+      if (tab) {
+        tab.click();
+        document.getElementById("clubs-list").scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    clubModalCloseBtn.addEventListener("click", closeClubModal);
+    clubModalBackdrop.addEventListener("click", (e) => {
+      if (e.target === clubModalBackdrop) closeClubModal();
+    });
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && clubModalBackdrop.classList.contains("active")) {
+        closeClubModal();
+      }
+    });
+
+    // Theme Toggle
+    function initTheme() {
+      const savedTheme = localStorage.getItem("geo_team_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+
+    themeToggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("geo_team_theme", next);
+    });
+
+    // Mobile Toggle
+    mobileToggleBtn.addEventListener("click", () => {
+      const isOpen = mobileDrawer.classList.toggle("open");
+      mobileToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      mobileDrawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initTheme();
+      renderClubs();
+    });
+  </script>
+</body>
+</html>

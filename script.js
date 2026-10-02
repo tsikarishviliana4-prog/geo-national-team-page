@@ -5,7 +5,7 @@
  */
 
 // ---------------------------------------------------------------------------
-// 1. Full Squad Dataset (26+ Players)
+// 1. Full Squad Dataset (Updated according to User Specifications)
 // ---------------------------------------------------------------------------
 const SQUAD_DATA = [
   // --- GOALKEEPERS (მეკარეები) ---
@@ -20,34 +20,14 @@ const SQUAD_DATA = [
     birthDate: "29 სექტემბერი, 2000",
     birthPlace: "თბილისი, საქართველო",
     height: "199 სმ",
-    club: "ვალენსია / ლივერპული",
-    clubCountry: "ესპანეთი",
-    clubFlag: "🇪🇸",
+    club: "ლივერპული",
+    clubCountry: "ინგლისი",
+    clubFlag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     caps: 25,
     goals: 0,
     marketValue: "€45.00M",
-    highlight: "ევრო 2024-ის საუკეთესო მეკარე (30 სეივი)",
-    bio: "მსოფლიოს ერთ-ერთი ყველაზე ძვირადღირებული მეკარე. ევრო 2024-ის მთავარი გმირი, რომელმაც ტურნირის რეკორდი დაამყარა სეივების რაოდენობით. 2024 წელს გააფორმა კონტრაქტი „ლივერპულთან“."
-  },
-  {
-    id: "loria",
-    number: 1,
-    nameKa: "გიორგი ლორია",
-    nameEn: "Giorgi Loria",
-    position: "GK",
-    positionNameKa: "მეკარე",
-    age: 38,
-    birthDate: "27 იანვარი, 1986",
-    birthPlace: "თბილისი, საქართველო",
-    height: "197 სმ",
-    club: "ომონია არადიპუ",
-    clubCountry: "კვიპროსი",
-    clubFlag: "🇨🇾",
-    caps: 78,
-    goals: 0,
-    marketValue: "€100K",
-    highlight: "ნაკრების გამოცდილი ვეტერანი",
-    bio: "საქართველოს ნაკრების ერთ-ერთი ყველაზე ერთგული და გამოცდილი მეკარე, რომელმაც ეროვნული გუნდის ღირსება 78-ზე მეტ შეხვედრაში დაიცვა."
+    highlight: "მსოფლიოს ერთ-ერთი საუკეთესო მეკარე",
+    bio: "მსოფლიო დონის მეკარე. ევრო 2024-ის მთავარი გმირი და ტურნირის რეკორდსმენი სეივებით. ინგლისური გრანდის, „ლივერპულის“ კარის დარაჯი."
   },
   {
     id: "gugeshashvili",
@@ -67,30 +47,10 @@ const SQUAD_DATA = [
     goals: 0,
     marketValue: "€600K",
     highlight: "საიმედო მეკარე",
-    bio: "ნიჭიერი მეკარე, რომელმაც წარმატებული პერიოდი გაატარა აზერბაიჯანის „ყარაბაღში“ და ჩემპიონთა ლიგის საკვალიფიკაციო ეტაპებზე, ამჟამად კი საბერძნეთში ასპარეზობს."
+    bio: "ნიჭიერი ქართველი მეკარე, რომელმაც ჩემპიონთა ლიგის საკვალიფიკაციო ეტაპებზე დიდი გამოცდილება დააგროვა."
   },
 
   // --- DEFENDERS (მცველები) ---
-  {
-    id: "kashia",
-    number: 4,
-    nameKa: "გურამ კაშია",
-    nameEn: "Guram Kashia",
-    position: "DEF",
-    positionNameKa: "ცენტრალური მცველი",
-    age: 37,
-    birthDate: "4 ივლისი, 1987",
-    birthPlace: "თბილისი, საქართველო",
-    height: "185 სმ",
-    club: "სლოვანი ბრატისლავა",
-    clubCountry: "სლოვაკეთი",
-    clubFlag: "🇸🇰",
-    caps: 122,
-    goals: 3,
-    marketValue: "€300K",
-    highlight: "ნაკრების კაპიტანი & რეკორდსმენი",
-    bio: "ნაკრების ლეგენდარული კაპიტანი, რომელსაც 120-ზე მეტი სანაკრებო მატჩი აქვს ჩატარებული. დაცვის ხაზის ურყევი ლიდერი და ქართული ფეხბურთის ნამდვილი სიმბოლო."
-  },
   {
     id: "kakabadze",
     number: 2,
@@ -109,7 +69,7 @@ const SQUAD_DATA = [
     goals: 0,
     marketValue: "€1.20M",
     highlight: "ევრო 2024-ის ერთ-ერთი საუკეთესო მცველი",
-    bio: "ფლანგის უსწრაფესი და დაუღალავი მცველი. ევრო 2024-ზე შესანიშნავი თამაშით საერთაშორისო ექსპერტების დიდი მოწონება დაიმსახურა."
+    bio: "ფლანგის უსწრაფესი და დაუღალავი მცველი. ევრო 2024-ზე გამორჩეული თამაშით საერთაშორისო ექსპერტების დიდი მოწონება დაიმსახურა."
   },
   {
     id: "dvali",
@@ -128,8 +88,8 @@ const SQUAD_DATA = [
     caps: 38,
     goals: 1,
     marketValue: "€1.00M",
-    highlight: "ევრო 2024-ის დაცვის ბურჯი",
-    bio: "ცენტრალური მცველი, რომელმაც ევროპის ჩემპიონატზე უმაღლესი დონის საიმედოობა აჩვენა პორტუგალიასთან, ჩეხეთთან და ესპანეთთან შეხვედრებში."
+    highlight: "დაცვის საიმედო ბურჯი",
+    bio: "ცენტრალური მცველი, რომელმაც ევროპის ჩემპიონატზე უმაღლესი დონის საიმედოობა აჩვენა პორტუგალიასთან და ჩეხეთთან შეხვედრებში."
   },
   {
     id: "lochoshvili",
@@ -142,34 +102,14 @@ const SQUAD_DATA = [
     birthDate: "29 მაისი, 1998",
     birthPlace: "თბილისი, საქართველო",
     height: "192 სმ",
-    club: "კრემონეზე",
-    clubCountry: "იტალია",
-    clubFlag: "🇮🇹",
+    club: "კელნი",
+    clubCountry: "გერმანია",
+    clubFlag: "🇩🇪",
     caps: 18,
     goals: 1,
-    marketValue: "€1.50M",
-    highlight: "FIFA Fair Play ჯილდოს მფლობელი",
-    bio: "ფიზიკურად უძლიერესი მცველი. ცნობილია თავისი გმირობით (მოწინააღმდეგე ფეხბურთელის სიცოცხლის გადარჩენით), რისთვისაც ფიფას სპეციალური ჯილდო გადაეცა."
-  },
-  {
-    id: "gvelesiani",
-    number: 15,
-    nameKa: "გიორგი გველესიანი",
-    nameEn: "Giorgi Gvelesiani",
-    position: "DEF",
-    positionNameKa: "ცენტრალური მცველი",
-    age: 33,
-    birthDate: "5 მაისი, 1991",
-    birthPlace: "თბილისი, საქართველო",
-    height: "193 სმ",
-    club: "პერსეპოლისი",
-    clubCountry: "ირანი",
-    clubFlag: "🇮🇷",
-    caps: 6,
-    goals: 0,
-    marketValue: "€400K",
-    highlight: "ევრო 2024-ის სენსაციური დებიუტანტი",
-    bio: "ირანის ჩემპიონატის ორგზის გამარჯვებული. 33 წლის ასაკში ჰქონდა ზღაპრული დებიუტი ევროპის ჩემპიონატზე, სადაც პორტუგალიასთან გამარჯვებაში უდიდესი როლი ითამაშა."
+    marketValue: "€1.80M",
+    highlight: "გერმანული „კელნის“ მცველი & FIFA Fair Play",
+    bio: "ფიზიკურად უძლიერესი და მებრძოლი მცველი. ასპარეზობს გერმანიის „კელნში“ და ცნობილია თავისი შეუპოვრობით."
   },
   {
     id: "goglichidze",
@@ -182,14 +122,34 @@ const SQUAD_DATA = [
     birthDate: "25 ივნისი, 2004",
     birthPlace: "ქუთაისი, საქართველო",
     height: "188 სმ",
-    club: "ემპოლი",
+    club: "უდინეზე",
     clubCountry: "იტალია",
     clubFlag: "🇮🇹",
     caps: 2,
     goals: 0,
     marketValue: "€5.00M",
     highlight: "იტალიის სერია A-ს ამომავალი ვარსკვლავი",
-    bio: "ქართული ფეხბურთის ერთ-ერთი ყველაზე პერსპექტიული ცენტრალური მცველი. 2024 წელს დაიმკვიდრა ადგილი სერია A-ს „ემპოლის“ ძირითად შემადგენლობაში."
+    bio: "ქართული ფეხბურთის გამორჩეული ტალანტი. იტალიურ „უდინეზეში“ დაიმკვიდრა თავი და ერთ-ერთ ყველაზე პერსპექტიულ მცველად ითვლება."
+  },
+  {
+    id: "sazonov",
+    number: 15,
+    nameKa: "საბა საზონოვი",
+    nameEn: "Saba Sazonov",
+    position: "DEF",
+    positionNameKa: "ცენტრალური მცველი",
+    age: 22,
+    birthDate: "1 თებერვალი, 2002",
+    birthPlace: "სანქტ-პეტერბურგი",
+    height: "194 სმ",
+    club: "ტორინო / ემპოლი",
+    clubCountry: "იტალია",
+    clubFlag: "🇮🇹",
+    caps: 4,
+    goals: 1,
+    marketValue: "€2.80M",
+    highlight: "იტალიის სერია A-ს ცენტრალური მცველი",
+    bio: "მაღალი, ათლეტური და მეორე სართულზე უბადლო მცველი. 2023 წლის U21 ევროპის ჩემპიონატის ერთ-ერთი გამორჩეული ლიდერი."
   },
   {
     id: "gocholeishvili",
@@ -202,14 +162,14 @@ const SQUAD_DATA = [
     birthDate: "14 თებერვალი, 2001",
     birthPlace: "ქუთაისი, საქართველო",
     height: "178 სმ",
-    club: "კოპენჰაგენი",
-    clubCountry: "დანია",
-    clubFlag: "🇩🇰",
+    club: "კადისი",
+    clubCountry: "ესპანეთი",
+    clubFlag: "🇪🇸",
     caps: 10,
     goals: 0,
     marketValue: "€2.50M",
-    highlight: "ჩემპიონთა ლიგის გამოცდილება",
-    bio: "შეტევაში უაღრესად პროდუქტიული და ენერგიული ფლანგის მცველი, რომელიც ევროტურნირებზე რეგულარულად ასპარეზობს."
+    highlight: "ესპანური „კადისის“ ფლანგის მცველი",
+    bio: "სწრაფი, აგრესიული და შეტევაში გამუდმებით ჩართული ფლანგელი, რომელიც ესპანურ „კადისში“ ასპარეზობს."
   },
   {
     id: "azarovi",
@@ -228,28 +188,8 @@ const SQUAD_DATA = [
     caps: 18,
     goals: 0,
     marketValue: "€5.00M",
-    highlight: "ევროპის ჩემპიონთა ლიგის ასისტისტი",
-    bio: "უმაღლესი ტექნიკითა და ჩაწოდებებით გამორჩეული მარცხენა მცველი. დონეცკის „შახტარის“ შემადგენლობაში ევროპის წამყვან გუნდებთან არაერთი ბრწყინვალე მატჩი აქვს ჩატარებული."
-  },
-  {
-    id: "kvirkvelia",
-    number: 21,
-    nameKa: "სოლომონ კვირკველია",
-    nameEn: "Solomon Kvirkvelia",
-    position: "DEF",
-    positionNameKa: "ცენტრალური მცველი",
-    age: 32,
-    birthDate: "6 თებერვალი, 1992",
-    birthPlace: "სამტრედია, საქართველო",
-    height: "196 სმ",
-    club: "დინამო თბილისი",
-    clubCountry: "საქართველო",
-    clubFlag: "🇬🇪",
-    caps: 62,
-    goals: 0,
-    marketValue: "€700K",
-    highlight: "60+ მატჩი ეროვნულ ნაკრებში",
-    bio: "წლების განმავლობაში ეროვნული გუნდის შეუცვლელი ცენტრალური მცველი, რომელმაც დიდი წვლილი შეიტანა ნაკრების ევრო 2024-ზე გასვლაში."
+    highlight: "ჩემპიონთა ლიგის გამოცდილება",
+    bio: "ტექნიკური და თანამედროვე ტიპის მარცხენა მცველი, უმაღლესი დონის ჩაწოდებებითა და შეტევითი პოტენციალით."
   },
   {
     id: "tabidze",
@@ -284,14 +224,14 @@ const SQUAD_DATA = [
     birthDate: "29 აგვისტო, 1999",
     birthPlace: "თბილისი, საქართველო",
     height: "183 სმ",
-    club: "უოტფორდი",
-    clubCountry: "ინგლისი",
-    clubFlag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    club: "უდინეზე",
+    clubCountry: "იტალია",
+    clubFlag: "🇮🇹",
     caps: 31,
     goals: 9,
-    marketValue: "€4.50M",
-    highlight: "ნაკრების მთავარი გამთამაშებელი",
-    bio: "ქართული ფეხბურთის მაესტრო. ფენომენალური დრიბლინგითა და გამჭოლი პასებით ის ინგლისის ჩემპიონშიპსა და ეროვნულ ნაკრებში შეტევების მთავარი მამოძრავებელი ძალაა."
+    marketValue: "€6.00M",
+    highlight: "იტალიური „უდინეზეს“ გამთამაშებელი",
+    bio: "ქართული ფეხბურთის მაესტრო. ფენომენალური დრიბლინგითა და გამჭოლი პასებით ის იტალიურ „უდინეზესა“ და ნაკრებში შეტევების მთავარი მამოძრავებელი ძალაა."
   },
   {
     id: "kiteishvili",
@@ -324,14 +264,14 @@ const SQUAD_DATA = [
     birthDate: "19 ივნისი, 1999",
     birthPlace: "თბილისი, საქართველო",
     height: "176 სმ",
-    club: "ლევანტე",
+    club: "სევილია",
     clubCountry: "ესპანეთი",
     clubFlag: "🇪🇸",
     caps: 16,
     goals: 2,
-    marketValue: "€4.00M",
-    highlight: "ევრო 2024-ის ერთ-ერთი მთავარი აღმოჩენა",
-    bio: "დაუღალავი შრომისუნარიანობით, ტაქტიკური განსჯითა და ულამაზესი გოლებით (თურქეთთან და ალბანეთთან) ევროპის ყურადღების ცენტრში მოექცა."
+    marketValue: "€8.00M",
+    highlight: "ესპანური „სევილიას“ ნახევარმცველი",
+    bio: "დაუღალავი შრომისუნარიანობით, ტაქტიკური განსჯითა და ულამაზესი გოლებით ესპანურ „სევილიაში“ დამკვიდრდა."
   },
   {
     id: "davitashvili",
@@ -364,18 +304,38 @@ const SQUAD_DATA = [
     birthDate: "18 ნოემბერი, 2000",
     birthPlace: "რიშონ-ლე-ციონი",
     height: "171 სმ",
-    club: "გრანადა",
+    club: "რაიო ვალეკანო",
     clubCountry: "ესპანეთი",
     clubFlag: "🇪🇸",
     caps: 21,
     goals: 1,
-    marketValue: "€1.80M",
-    highlight: "U20 მსოფლიო ჩემპიონი",
-    bio: "განსაკუთრებული სისწრაფისა და ინდივიდუალური ოსტატობის მქონე მოთამაშე. შეუძლია როგორც შეტევაში, ისე მარცხენა ფლანგის მთელ სიგრძეზე თამაში."
+    marketValue: "€2.50M",
+    highlight: "ესპანური „რაიო ვალეკანოს“ მოთამაშე",
+    bio: "განსაკუთრებული სისწრაფისა და ინდივიდუალური ოსტატობის მქონე მოთამაშე, რომელიც ლა ლიგის „რაიო ვალეკანოში“ ირჯება."
+  },
+  {
+    id: "gagnidze",
+    number: 16,
+    nameKa: "ლუკა გაგნიძე",
+    nameEn: "Luka Gagnidze",
+    position: "MID",
+    positionNameKa: "ცენტრალური ნახევარმცველი",
+    age: 21,
+    birthDate: "28 თებერვალი, 2003",
+    birthPlace: "თბილისი, საქართველო",
+    height: "176 სმ",
+    club: "დინამო მოსკოვი",
+    clubCountry: "რუსეთი",
+    clubFlag: "🇷🇺",
+    caps: 5,
+    goals: 0,
+    marketValue: "€2.00M",
+    highlight: "საქართველოს U21-ის გამთამაშებელი",
+    bio: "ტექნიკური და ჭკვიანი ცენტრალური ნახევარმცველი. 2023 წლის ევროპის ახალგაზრდულ ჩემპიონატზე საქართველოს ნაკრების ერთ-ერთი მთავარი ძალა."
   },
   {
     id: "mekvabishvili",
-    number: 16,
+    number: 20,
     nameKa: "ანზორ მექვაბიშვილი",
     nameEn: "Anzor Mekvabishvili",
     position: "MID",
@@ -392,46 +352,6 @@ const SQUAD_DATA = [
     marketValue: "€1.80M",
     highlight: "ნახევარდაცვის საიმედო ჩამშლელი",
     bio: "დისციპლინირებული საყრდენი ნახევარმცველი, რომელმაც ევრო 2024-ის ყველა შეხვედრაში დამაჯერებლად იასპარეზა."
-  },
-  {
-    id: "altunashvili",
-    number: 20,
-    nameKa: "სანდრო ალთუნაშვილი",
-    nameEn: "Sandro Altunashvili",
-    position: "MID",
-    positionNameKa: "ცენტრალური ნახევარმცველი",
-    age: 27,
-    birthDate: "19 მაისი, 1997",
-    birthPlace: "თბილისი, საქართველო",
-    height: "179 სმ",
-    club: "ვოლფსბერგერი",
-    clubCountry: "ავსტრია",
-    clubFlag: "🇦🇹",
-    caps: 8,
-    goals: 0,
-    marketValue: "€1.00M",
-    highlight: "ავსტრიის ბუნდესლიგის მოთამაშე",
-    bio: "შრომისმოყვარე ცენტრალური ნახევარმცველი მაღალი საფეხბურთო ინტელექტით და პასის კულტურით."
-  },
-  {
-    id: "kvekveskiri",
-    number: 7,
-    nameKa: "ნიკა კვეკვესკირი",
-    nameEn: "Nika Kvekveskiri",
-    position: "MID",
-    positionNameKa: "საყრდენი ნახევარმცველი",
-    age: 32,
-    birthDate: "29 მაისი, 1992",
-    birthPlace: "ზუგდიდი, საქართველო",
-    height: "186 სმ",
-    club: "ნირეგიჰაზა",
-    clubCountry: "უნგრეთი",
-    clubFlag: "🇭🇺",
-    caps: 61,
-    goals: 0,
-    marketValue: "€500K",
-    highlight: "ისტორიული პენალტის ავტორი (ევრო 2024)",
-    bio: "ფეხბურთელი, რომლის ზუსტმა პენალტმა საბერძნეთის წინააღმდეგ საქართველო ისტორიაში პირველად გაიყვანა ევროპის ჩემპიონატზე."
   },
   {
     id: "shengelia",
@@ -486,14 +406,14 @@ const SQUAD_DATA = [
     birthDate: "12 თებერვალი, 2001",
     birthPlace: "თბილისი, საქართველო",
     height: "183 სმ",
-    club: "ნაპოლი",
-    clubCountry: "იტალია",
-    clubFlag: "🇮🇹",
+    club: "პსჟ (Paris Saint-Germain)",
+    clubCountry: "საფრანგეთი",
+    clubFlag: "🇫🇷",
     caps: 38,
     goals: 17,
-    marketValue: "€80.00M",
-    highlight: "სერია A-ს MVP & იტალიის ჩემპიონი",
-    bio: "მსოფლიო დონის სუპერვარსკვლავი („კვარადონა“). „ნაპოლისთან“ ერთად მოიგო სკუდეტო და დასახელდა სერია A-ს სეზონის საუკეთესო ფეხბურთელად. ევრო 2024-ზე პორტუგალიასთან ისტორიული გამარჯვების მომტანი პირველი გოლის ავტორი."
+    marketValue: "€90.00M",
+    highlight: "ფრანგული გრანდის „პსჟ“-ს სუპერვარსკვლავი",
+    bio: "მსოფლიო დონის ქართველი ვარსკვლავი („კვარადონა“). საფრანგეთის გრანდის, „პსჟ“-ს შემტევი, რომელმაც ევროპული ფეხბურთის ელიტა დაიპყრო."
   },
   {
     id: "mikautadze",
@@ -506,14 +426,14 @@ const SQUAD_DATA = [
     birthDate: "31 ოქტომბერი, 2000",
     birthPlace: "ლიონი, საფრანგეთი",
     height: "176 სმ",
-    club: "ოლიმპიკ ლიონი",
-    clubCountry: "საფრანგეთი",
-    clubFlag: "🇫🇷",
+    club: "ვილიარეალი",
+    clubCountry: "ესპანეთი",
+    clubFlag: "🇪🇸",
     caps: 33,
     goals: 15,
-    marketValue: "€20.00M",
-    highlight: "UEFA EURO 2024-ის ბომბარდირი (ოქროს ბუცი)",
-    bio: "ევრო 2024-ის ოქროს ბუცის მფლობელი (3 გოლი, 1 საგოლე გადაცემა). მსოფლიო კლასის ფინიშერი და ლიონის „ოლიმპიკის“ მთავარი დამრტყმელი ძალა."
+    marketValue: "€25.00M",
+    highlight: "ესპანური „ვილიარეალის“ ბომბარდირი & Euro 2024 ოქროს ბუცი",
+    bio: "ევრო 2024-ის ოქროს ბუცის მფლობელი (3 გოლი). ესპანური „ვილიარეალის“ მთავარი დამრტყმელი ძალა და მსოფლიო კლასის ფინიშერი."
   },
   {
     id: "zivzivadze",
@@ -526,14 +446,34 @@ const SQUAD_DATA = [
     birthDate: "10 მარტი, 1994",
     birthPlace: "ქუთაისი, საქართველო",
     height: "189 სმ",
-    club: "კარლსრუე",
+    club: "ჰაიდენჰაიმი",
     clubCountry: "გერმანია",
     clubFlag: "🇩🇪",
     caps: 32,
     goals: 8,
-    marketValue: "€1.20M",
-    highlight: "ევრო 2024-ის პლეი-ოფის გმირი",
-    bio: "გულშემატკივართა უსაყვარლესი ფორვარდი. ლუქსემბურგთან ნახევარფინალში დუბლის ავტორი, რომელმაც გადამწყვეტი ნაბიჯი გადაადგმევინა ქვეყანას ევროპის ჩემპიონატისკენ."
+    marketValue: "€2.00M",
+    highlight: "გერმანიის ბუნდესლიგის „ჰაიდენჰაიმის“ ფორვარდი",
+    bio: "გულშემატკივართა უსაყვარლესი ფორვარდი, რომელიც გერმანიის ბუნდესლიგაში „ჰაიდენჰაიმის“ ღირსებას იცავს."
+  },
+  {
+    id: "kvernadze",
+    number: 17,
+    nameKa: "გიორგი კვერნაძე",
+    nameEn: "Giorgi Kvernadze",
+    position: "FWD",
+    positionNameKa: "ვინგერი / თავდამსხმელი",
+    age: 21,
+    birthDate: "7 თებერვალი, 2003",
+    birthPlace: "სამტრედია, საქართველო",
+    height: "188 სმ",
+    club: "ფროზინონე",
+    clubCountry: "იტალია",
+    clubFlag: "🇮🇹",
+    caps: 2,
+    goals: 0,
+    marketValue: "€1.50M",
+    highlight: "იტალიური „ფროზინონეს“ ახალგაზრდა ტალანტი",
+    bio: "აფეთქებადი სისწრაფის, ტექნიკისა და ძლიერი დრიბლინგის მქონე ახალგაზრდა ქართველი შემტევი, რომელიც იტალიაში ასპარეზობს."
   }
 ];
 
@@ -553,6 +493,13 @@ const resultsCount = document.getElementById("results-count");
 const resetFilterBtn = document.getElementById("reset-filter-btn");
 const noResultsBox = document.getElementById("no-results");
 const emptyResetBtn = document.getElementById("empty-reset-btn");
+
+// Dynamic Count Elements
+const countAllEl = document.getElementById("count-all");
+const countGkEl = document.getElementById("count-gk");
+const countDefEl = document.getElementById("count-def");
+const countMidEl = document.getElementById("count-mid");
+const countFwdEl = document.getElementById("count-fwd");
 
 // Modal Elements
 const modalBackdrop = document.getElementById("player-modal-backdrop");
@@ -577,7 +524,6 @@ const GEO_LATIN_MAP = {
 
 function transliterateLatinToGeo(str) {
   let lower = str.toLowerCase();
-  // handle multi-chars first
   lower = lower.replace(/sh/g, "შ")
                .replace(/ch/g, "ჩ")
                .replace(/ts/g, "ც")
@@ -592,7 +538,24 @@ function transliterateLatinToGeo(str) {
 }
 
 // ---------------------------------------------------------------------------
-// 4. Filter & Sort Logic
+// 4. Update Filter Tab Counts
+// ---------------------------------------------------------------------------
+function updateTabCounts() {
+  const total = SQUAD_DATA.length;
+  const gkCount = SQUAD_DATA.filter(p => p.position === "GK").length;
+  const defCount = SQUAD_DATA.filter(p => p.position === "DEF").length;
+  const midCount = SQUAD_DATA.filter(p => p.position === "MID").length;
+  const fwdCount = SQUAD_DATA.filter(p => p.position === "FWD").length;
+
+  if (countAllEl) countAllEl.textContent = total;
+  if (countGkEl) countGkEl.textContent = gkCount;
+  if (countDefEl) countDefEl.textContent = defCount;
+  if (countMidEl) countMidEl.textContent = midCount;
+  if (countFwdEl) countFwdEl.textContent = fwdCount;
+}
+
+// ---------------------------------------------------------------------------
+// 5. Filter & Sort Logic
 // ---------------------------------------------------------------------------
 function getFilteredSquad() {
   const query = searchQuery.trim().toLowerCase();
@@ -636,7 +599,7 @@ function getFilteredSquad() {
 }
 
 // ---------------------------------------------------------------------------
-// 5. Render Squad Cards
+// 6. Render Squad Cards
 // ---------------------------------------------------------------------------
 function getAvatarClass(pos) {
   if (pos === "GK") return "gk-avatar";
@@ -653,92 +616,94 @@ function renderSquad() {
   const players = getFilteredSquad();
 
   // Update counts
-  resultsCount.textContent = `ნაჩვენებია ${players.length} ფეხბურთელი`;
-  resetFilterBtn.style.display = (currentPosition !== "ALL" || searchQuery.length > 0) ? "inline-block" : "none";
+  if (resultsCount) resultsCount.textContent = `ნაჩვენებია ${players.length} ფეხბურთელი`;
+  if (resetFilterBtn) resetFilterBtn.style.display = (currentPosition !== "ALL" || searchQuery.length > 0) ? "inline-block" : "none";
 
   if (players.length === 0) {
-    squadGrid.innerHTML = "";
-    noResultsBox.style.display = "block";
+    if (squadGrid) squadGrid.innerHTML = "";
+    if (noResultsBox) noResultsBox.style.display = "block";
     return;
   }
 
-  noResultsBox.style.display = "none";
+  if (noResultsBox) noResultsBox.style.display = "none";
 
-  squadGrid.innerHTML = players.map(player => {
-    const initials = player.nameKa.split(" ").map(w => w[0]).join("");
-    return `
-      <article class="player-card" data-id="${player.id}" tabindex="0" role="button" aria-label="${player.nameKa} — დეტალების ნახვა">
-        <div class="card-top">
-          <div class="jersey-badge">#${player.number}</div>
-          <span class="pos-tag ${getPosTagClass(player.position)}">${player.positionNameKa}</span>
-        </div>
-
-        <div class="card-identity">
-          <div class="player-avatar ${getAvatarClass(player.position)}">
-            <span class="avatar-initials">${initials}</span>
+  if (squadGrid) {
+    squadGrid.innerHTML = players.map(player => {
+      const initials = player.nameKa.split(" ").map(w => w[0]).join("");
+      return `
+        <article class="player-card" data-id="${player.id}" tabindex="0" role="button" aria-label="${player.nameKa} — დეტალების ნახვა">
+          <div class="card-top">
+            <div class="jersey-badge">#${player.number}</div>
+            <span class="pos-tag ${getPosTagClass(player.position)}">${player.positionNameKa}</span>
           </div>
-          <div class="player-names">
-            <h3 class="player-name-ka">${player.nameKa}</h3>
-            <span class="player-name-en">${player.nameEn}</span>
-          </div>
-        </div>
 
-        <div class="card-club-row">
-          <span class="club-flag">${player.clubFlag}</span>
-          <span class="club-name">${player.club}</span>
-        </div>
-
-        <div class="card-stats">
-          <div class="c-stat-box">
-            <div class="c-stat-val">${player.age}</div>
-            <div class="c-stat-lbl">ასაკი</div>
+          <div class="card-identity">
+            <div class="player-avatar ${getAvatarClass(player.position)}">
+              <span class="avatar-initials">${initials}</span>
+            </div>
+            <div class="player-names">
+              <h3 class="player-name-ka">${player.nameKa}</h3>
+              <span class="player-name-en">${player.nameEn}</span>
+            </div>
           </div>
-          <div class="c-stat-box">
-            <div class="c-stat-val">${player.caps}</div>
-            <div class="c-stat-lbl">მატჩი</div>
-          </div>
-          <div class="c-stat-box">
-            <div class="c-stat-val">${player.goals}</div>
-            <div class="c-stat-lbl">გოლი</div>
-          </div>
-        </div>
 
-        ${player.highlight ? `
-          <div class="player-highlight-badge">
-            <span>⭐</span>
-            <span>${player.highlight}</span>
+          <div class="card-club-row">
+            <span class="club-flag">${player.clubFlag}</span>
+            <span class="club-name">${player.club}</span>
           </div>
-        ` : ''}
 
-        <button class="card-btn" aria-hidden="true" tabindex="-1">
-          <span>დაწვრილებით</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </button>
-      </article>
-    `;
-  }).join("");
+          <div class="card-stats">
+            <div class="c-stat-box">
+              <div class="c-stat-val">${player.age}</div>
+              <div class="c-stat-lbl">ასაკი</div>
+            </div>
+            <div class="c-stat-box">
+              <div class="c-stat-val">${player.caps}</div>
+              <div class="c-stat-lbl">მატჩი</div>
+            </div>
+            <div class="c-stat-box">
+              <div class="c-stat-val">${player.goals}</div>
+              <div class="c-stat-lbl">გოლი</div>
+            </div>
+          </div>
 
-  // Attach card click handlers
-  document.querySelectorAll(".player-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const pid = card.getAttribute("data-id");
-      openPlayerModal(pid);
-    });
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
+          ${player.highlight ? `
+            <div class="player-highlight-badge">
+              <span>⭐</span>
+              <span>${player.highlight}</span>
+            </div>
+          ` : ''}
+
+          <button class="card-btn" aria-hidden="true" tabindex="-1">
+            <span>დაწვრილებით</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </article>
+      `;
+    }).join("");
+
+    // Attach card click handlers
+    document.querySelectorAll(".player-card").forEach(card => {
+      card.addEventListener("click", () => {
         const pid = card.getAttribute("data-id");
         openPlayerModal(pid);
-      }
+      });
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          const pid = card.getAttribute("data-id");
+          openPlayerModal(pid);
+        }
+      });
     });
-  });
+  }
 }
 
 // ---------------------------------------------------------------------------
-// 6. Player Modal Logic
+// 7. Player Modal Logic
 // ---------------------------------------------------------------------------
 function openPlayerModal(playerId) {
   const p = SQUAD_DATA.find(x => x.id === playerId);
@@ -822,24 +787,26 @@ function closePlayerModal() {
 }
 
 // ---------------------------------------------------------------------------
-// 7. Event Listeners (Search, Filter, Sort, Modal)
+// 8. Event Listeners (Search, Filter, Sort, Modal)
 // ---------------------------------------------------------------------------
-// Search Input
-searchInput.addEventListener("input", (e) => {
-  searchQuery = e.target.value;
-  clearSearchBtn.style.display = searchQuery ? "flex" : "none";
-  renderSquad();
-});
+if (searchInput) {
+  searchInput.addEventListener("input", (e) => {
+    searchQuery = e.target.value;
+    if (clearSearchBtn) clearSearchBtn.style.display = searchQuery ? "flex" : "none";
+    renderSquad();
+  });
+}
 
-clearSearchBtn.addEventListener("click", () => {
-  searchInput.value = "";
-  searchQuery = "";
-  clearSearchBtn.style.display = "none";
-  searchInput.focus();
-  renderSquad();
-});
+if (clearSearchBtn) {
+  clearSearchBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    searchQuery = "";
+    clearSearchBtn.style.display = "none";
+    searchInput.focus();
+    renderSquad();
+  });
+}
 
-// Position Filter Tabs
 filterTabs.forEach(tab => {
   tab.addEventListener("click", () => {
     filterTabs.forEach(t => {
@@ -854,18 +821,18 @@ filterTabs.forEach(tab => {
   });
 });
 
-// Sort Selector
-sortSelect.addEventListener("change", (e) => {
-  currentSort = e.target.value;
-  renderSquad();
-});
+if (sortSelect) {
+  sortSelect.addEventListener("change", (e) => {
+    currentSort = e.target.value;
+    renderSquad();
+  });
+}
 
-// Reset Filters
 function resetAllFilters() {
   currentPosition = "ALL";
   searchQuery = "";
-  searchInput.value = "";
-  clearSearchBtn.style.display = "none";
+  if (searchInput) searchInput.value = "";
+  if (clearSearchBtn) clearSearchBtn.style.display = "none";
 
   filterTabs.forEach(t => {
     t.classList.toggle("active", t.getAttribute("data-position") === "ALL");
@@ -875,74 +842,80 @@ function resetAllFilters() {
   renderSquad();
 }
 
-resetFilterBtn.addEventListener("click", resetAllFilters);
-emptyResetBtn.addEventListener("click", resetAllFilters);
+if (resetFilterBtn) resetFilterBtn.addEventListener("click", resetAllFilters);
+if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetAllFilters);
 
-// Global position filter helper (for footer links)
 window.filterByPosition = function(pos) {
   const targetTab = document.querySelector(`.filter-tab[data-position="${pos}"]`);
   if (targetTab) {
     targetTab.click();
-    document.getElementById("squad").scrollIntoView({ behavior: "smooth" });
+    const squadSec = document.getElementById("squad");
+    if (squadSec) squadSec.scrollIntoView({ behavior: "smooth" });
   }
 };
 
-// Modal Close Listeners
-modalCloseBtn.addEventListener("click", closePlayerModal);
-modalBackdrop.addEventListener("click", (e) => {
-  if (e.target === modalBackdrop) {
-    closePlayerModal();
-  }
-});
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", closePlayerModal);
+if (modalBackdrop) {
+  modalBackdrop.addEventListener("click", (e) => {
+    if (e.target === modalBackdrop) {
+      closePlayerModal();
+    }
+  });
+}
+
 window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modalBackdrop.classList.contains("active")) {
+  if (e.key === "Escape" && modalBackdrop && modalBackdrop.classList.contains("active")) {
     closePlayerModal();
   }
 });
 
 // ---------------------------------------------------------------------------
-// 8. Dark / Light Mode Toggle
+// 9. Dark / Light Mode Toggle
 // ---------------------------------------------------------------------------
 function initTheme() {
   const savedTheme = localStorage.getItem("geo_team_theme") || "dark";
   document.documentElement.setAttribute("data-theme", savedTheme);
 }
 
-themeToggleBtn.addEventListener("click", () => {
-  const current = document.documentElement.getAttribute("data-theme");
-  const next = current === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("geo_team_theme", next);
-});
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("geo_team_theme", next);
+  });
+}
 
 // ---------------------------------------------------------------------------
-// 9. Mobile Navigation Drawer
+// 10. Mobile Navigation Drawer
 // ---------------------------------------------------------------------------
-mobileToggleBtn.addEventListener("click", () => {
-  const isOpen = mobileDrawer.classList.toggle("open");
-  mobileToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
-  mobileDrawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
-});
+if (mobileToggleBtn && mobileDrawer) {
+  mobileToggleBtn.addEventListener("click", () => {
+    const isOpen = mobileDrawer.classList.toggle("open");
+    mobileToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    mobileDrawer.setAttribute("aria-hidden", isOpen ? "false" : "true");
+  });
+}
 
 mobileLinks.forEach(link => {
   link.addEventListener("click", () => {
-    mobileDrawer.classList.remove("open");
-    mobileToggleBtn.setAttribute("aria-expanded", "false");
-    mobileDrawer.setAttribute("aria-hidden", "true");
+    if (mobileDrawer) mobileDrawer.classList.remove("open");
+    if (mobileToggleBtn) mobileToggleBtn.setAttribute("aria-expanded", "false");
+    if (mobileDrawer) mobileDrawer.setAttribute("aria-hidden", "true");
   });
 });
 
 // ---------------------------------------------------------------------------
-// 10. Fan Zone: Interactive MVP Voting
+// 11. Fan Zone: Interactive MVP Voting
 // ---------------------------------------------------------------------------
 const pollButtons = document.querySelectorAll(".poll-btn");
 const voteFeedback = document.getElementById("vote-feedback");
 
 let votes = {
-  kvara: 460,
-  mamarda: 310,
-  mikautadze: 150,
-  chakve: 80
+  kvara: 480,
+  mamarda: 330,
+  mikautadze: 180,
+  chakve: 90
 };
 
 function updatePollUI() {
@@ -964,16 +937,18 @@ pollButtons.forEach(btn => {
       pollButtons.forEach(b => b.classList.remove("voted"));
       btn.classList.add("voted");
 
-      voteFeedback.style.display = "block";
-      setTimeout(() => {
-        voteFeedback.style.display = "none";
-      }, 4000);
+      if (voteFeedback) {
+        voteFeedback.style.display = "block";
+        setTimeout(() => {
+          voteFeedback.style.display = "none";
+        }, 4000);
+      }
     }
   });
 });
 
 // ---------------------------------------------------------------------------
-// 11. Fan Zone: Interactive Trivia Quiz
+// 12. Fan Zone: Interactive Trivia Quiz
 // ---------------------------------------------------------------------------
 const QUIZ_QUESTIONS = [
   {
@@ -987,24 +962,24 @@ const QUIZ_QUESTIONS = [
     correct: 1
   },
   {
-    question: "რამდენი სეივი შეასრულა გიორგი მამარდაშვილმა ევრო 2024-ის 4 შეხვედრაში?",
+    question: "რომელ ევროპულ გრანდში გადავიდა საქართველოს ნაკრების მეკარე გიორგი მამარდაშვილი?",
     options: [
-      "18 სეივი",
-      "22 სეივი",
-      "30 სეივი",
-      "35 სეივი"
+      "მადრიდის „რეალი“",
+      "„ლივერპული“",
+      "„მანჩესტერ სიტი“",
+      "„ბაიერნი“"
     ],
-    correct: 2
+    correct: 1
   },
   {
-    question: "რომელ წელს მოიპოვა საქართველოს ნაკრებმა ისტორიაში პირველად ევროპის ჩემპიონატის საგზური?",
+    question: "ვინ არის საქართველოს ეროვნული საფეხბურთო ნაკრების მთავარი მწვრთნელი?",
     options: [
-      "2020 წელს",
-      "2022 წელს",
-      "2024 წელს",
-      "2018 წელს"
+      "რამაზ სვანაძე",
+      "თემურ ქეცბაია",
+      "გიორგი ჭიაბრიშვილი",
+      "ვლადიმირ ვაისი"
     ],
-    correct: 2
+    correct: 0
   }
 ];
 
@@ -1019,6 +994,7 @@ const resultScoreText = document.getElementById("result-score-text");
 const restartQuizBtn = document.getElementById("restart-quiz-btn");
 
 function renderQuizQuestion() {
+  if (!quizQuestionText || !quizAnswersBox || !quizProgress) return;
   const q = QUIZ_QUESTIONS[currentQuizIdx];
   quizProgress.textContent = `კითხვა ${currentQuizIdx + 1} / ${QUIZ_QUESTIONS.length}`;
   quizQuestionText.textContent = q.question;
@@ -1057,26 +1033,30 @@ function handleQuizAnswer(selectedIdx) {
 }
 
 function showQuizResult() {
-  quizProgress.style.display = "none";
-  quizQuestionText.style.display = "none";
-  quizAnswersBox.style.display = "none";
+  if (quizProgress) quizProgress.style.display = "none";
+  if (quizQuestionText) quizQuestionText.style.display = "none";
+  if (quizAnswersBox) quizAnswersBox.style.display = "none";
 
-  quizResultBox.style.display = "block";
-  resultScoreText.textContent = `თქვენი შედეგია: ${quizScore} / ${QUIZ_QUESTIONS.length} სწორი პასუხი! 🇬🇪`;
+  if (quizResultBox) {
+    quizResultBox.style.display = "block";
+    resultScoreText.textContent = `თქვენი შედეგია: ${quizScore} / ${QUIZ_QUESTIONS.length} სწორი პასუხი! 🇬🇪`;
+  }
 }
 
-restartQuizBtn.addEventListener("click", () => {
-  currentQuizIdx = 0;
-  quizScore = 0;
-  quizProgress.style.display = "block";
-  quizQuestionText.style.display = "block";
-  quizAnswersBox.style.display = "flex";
-  quizResultBox.style.display = "none";
-  renderQuizQuestion();
-});
+if (restartQuizBtn) {
+  restartQuizBtn.addEventListener("click", () => {
+    currentQuizIdx = 0;
+    quizScore = 0;
+    if (quizProgress) quizProgress.style.display = "block";
+    if (quizQuestionText) quizQuestionText.style.display = "block";
+    if (quizAnswersBox) quizAnswersBox.style.display = "flex";
+    if (quizResultBox) quizResultBox.style.display = "none";
+    renderQuizQuestion();
+  });
+}
 
 // ---------------------------------------------------------------------------
-// 12. Active Navbar Link on Scroll
+// 13. Active Navbar Link on Scroll
 // ---------------------------------------------------------------------------
 const sections = document.querySelectorAll("section[id]");
 const navLinksList = document.querySelectorAll(".nav-link");
@@ -1101,10 +1081,11 @@ window.addEventListener("scroll", () => {
 });
 
 // ---------------------------------------------------------------------------
-// 13. Initialization
+// 14. Initialization
 // ---------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
+  updateTabCounts();
   renderSquad();
   renderQuizQuestion();
   updatePollUI();

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>საქართველოს ეროვნული საფეხბურთო ნაკრები — ოფიციალური პორტალი და შემადგენლობა</title>
   <meta name="description" content="საქართველოს ეროვნული საფეხბურთო ნაკრების (ჯვაროსნები) სრული შემადგენლობა, მოთამაშეების ასაკი, კლუბები, სტატისტიკა და უახლესი მატჩები.">
-  <meta name="keywords" content="საქართველოს ნაკრები, ფეხბურთი, კვარაცხელია, მამარდაშვილი, მიქაუტაძე, ევრო 2024, ჯვაროსნები, ვილი სანიოლი, ნაკრების შემადგენლობა">
+  <meta name="keywords" content="საქართველოს ნაკრები, ფეხბურთი, კვარაცხელია, მამარდაშვილი, მიქაუტაძე, ევრო 2024, ჯვაროსნები, რამაზ სვანაძე, ნაკრების შემადგენლობა">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇬🇪</text></svg>">
 
   <!-- Google Fonts: Noto Sans Georgian & Plus Jakarta Sans -->
@@ -38,6 +38,7 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero" class="nav-link active" id="nav-link-hero">მთავარი</a></li>
         <li><a href="#squad" class="nav-link" id="nav-link-squad">შემადგენლობა</a></li>
+        <li><a href="clubs.html" class="nav-link clubs-highlight-link" id="nav-link-clubs">ქართული კლუბები ⚽</a></li>
         <li><a href="#history" class="nav-link" id="nav-link-history">ისტორია & შედეგები</a></li>
         <li><a href="#coach" class="nav-link" id="nav-link-coach">სამწვრთნელო შტაბი</a></li>
         <li><a href="#fanzone" class="nav-link" id="nav-link-fanzone">ფან-ზონა & ქვიზი</a></li>
@@ -64,6 +65,9 @@
         </button>
 
         <!-- CTA Button -->
+        <a href="clubs.html" class="btn btn-secondary nav-cta" id="nav-clubs-btn" style="border-color: rgba(245, 158, 11, 0.4); color: var(--geo-gold);">
+          <span>ქართული კლუბები</span>
+        </a>
         <a href="#squad" class="btn btn-primary nav-cta" id="nav-squad-btn">
           <span>გუნდის სია</span>
           <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -86,11 +90,13 @@
       <ul class="mobile-links">
         <li><a href="#hero" class="mobile-link" id="mob-link-hero">მთავარი</a></li>
         <li><a href="#squad" class="mobile-link" id="mob-link-squad">შემადგენლობა</a></li>
+        <li><a href="clubs.html" class="mobile-link" id="mob-link-clubs" style="color: var(--geo-gold); font-weight: 700;">ქართული კლუბები ⚽</a></li>
         <li><a href="#history" class="mobile-link" id="mob-link-history">ისტორია & შედეგები</a></li>
         <li><a href="#coach" class="mobile-link" id="mob-link-coach">სამწვრთნელო შტაბი</a></li>
         <li><a href="#fanzone" class="mobile-link" id="mob-link-fanzone">ფან-ზონა & ქვიზი</a></li>
       </ul>
-      <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-footer" style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="clubs.html" class="btn btn-secondary w-full" id="mob-clubs-btn">ქართული კლუბების გვერდი</a>
         <a href="#squad" class="btn btn-primary w-full" id="mob-cta-btn">შემადგენლობის ნახვა</a>
       </div>
     </div>
@@ -116,7 +122,7 @@
         </h1>
 
         <p class="hero-description reveal-fade-up" style="animation-delay: 0.2s;">
-          ჩვენ ვართ საქართველო! გაიცანით ეროვნული ნაკრების სრული შემადგენლობა — ფეხბურთელები, მათი ასაკი, კლუბები, საერთაშორისო სტატისტიკა და ისტორიული მიღწევები ერთიან ინტერაქციულ პლატფორმაზე.
+          ჩვენ ვართ საქართველო! გაიცანით ეროვნული ნაკრების განახლებული შემადგენლობა — ფეხბურთელები, მათი ასაკი, ევროპული კლუბები, სტატისტიკა და რამაზ სვანაძის სამწვრთნელო ხედვა.
         </p>
 
         <div class="hero-actions reveal-fade-up" style="animation-delay: 0.3s;">
@@ -127,20 +133,19 @@
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
-          <a href="#history" class="btn btn-secondary btn-large" id="hero-history-btn">
-            <span class="btn-play-icon">⚽</span>
-            <span>ისტორიული მატჩები</span>
+          <a href="clubs.html" class="btn btn-secondary btn-large" id="hero-clubs-btn" style="border-color: rgba(245, 158, 11, 0.4); color: var(--geo-gold);">
+            <span>🇬🇪 ქართული კლუბების გვერდი</span>
           </a>
         </div>
 
         <!-- Quick Live Stat Bar -->
         <div class="hero-stats-grid reveal-fade-up" style="animation-delay: 0.4s;">
           <div class="stat-card">
-            <div class="stat-number">26+</div>
+            <div class="stat-number">23</div>
             <div class="stat-label">განაცხადის მოთამაშე</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">25.4</div>
+            <div class="stat-number">24.2</div>
             <div class="stat-label">საშუალო ასაკი</div>
           </div>
           <div class="stat-card highlight-stat">
@@ -148,7 +153,7 @@
             <div class="stat-label">ევრო 2024-ის პლეი-ოფი</div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">€180M+</div>
+            <div class="stat-number">€190M+</div>
             <div class="stat-label">შემადგენლობის ღირებულება</div>
           </div>
         </div>
@@ -175,7 +180,7 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="player-search" class="search-input" placeholder="მოძებნე ფეხბურთელი, კლუბი ან პოზიცია (მაგ. კვარა, ვალენსია, მამარდა)..." autocomplete="off">
+            <input type="text" id="player-search" class="search-input" placeholder="მოძებნე ფეხბურთელი, კლუბი ან პოზიცია (მაგ. კვარა, ლივერპული, პსჟ, ვილიარეალი)..." autocomplete="off">
             <button class="clear-search-btn" id="clear-search" aria-label="ძებნის გასუფთავება" style="display: none;">✕</button>
           </div>
 
@@ -183,23 +188,23 @@
           <div class="filter-tabs" id="position-filters" role="tablist">
             <button class="filter-tab active" data-position="ALL" role="tab" aria-selected="true" id="tab-all">
               <span>ყველა</span>
-              <span class="count-pill" id="count-all">26</span>
+              <span class="count-pill" id="count-all">23</span>
             </button>
             <button class="filter-tab" data-position="GK" role="tab" aria-selected="false" id="tab-gk">
               <span>🧤 მეკარეები</span>
-              <span class="count-pill" id="count-gk">3</span>
+              <span class="count-pill" id="count-gk">2</span>
             </button>
             <button class="filter-tab" data-position="DEF" role="tab" aria-selected="false" id="tab-def">
               <span>🛡️ მცველები</span>
-              <span class="count-pill" id="count-def">10</span>
+              <span class="count-pill" id="count-def">8</span>
             </button>
             <button class="filter-tab" data-position="MID" role="tab" aria-selected="false" id="tab-mid">
               <span>⚙️ ნახევარმცველები</span>
-              <span class="count-pill" id="count-mid">10</span>
+              <span class="count-pill" id="count-mid">9</span>
             </button>
             <button class="filter-tab" data-position="FWD" role="tab" aria-selected="false" id="tab-fwd">
               <span>⚡ თავდამსხმელები</span>
-              <span class="count-pill" id="count-fwd">3</span>
+              <span class="count-pill" id="count-fwd">4</span>
             </button>
           </div>
 
@@ -220,7 +225,7 @@
 
         <!-- Active Filter Status Indicator -->
         <div class="filter-status-row">
-          <span class="results-text" id="results-count">ნაჩვენებია 26 ფეხბურთელი</span>
+          <span class="results-text" id="results-count">ნაჩვენებია 23 ფეხბურთელი</span>
           <button class="reset-filter-btn" id="reset-filter-btn" style="display: none;">ყველას ნახვა</button>
         </div>
 
@@ -233,7 +238,7 @@
         <div class="no-results-box" id="no-results" style="display: none;">
           <div class="no-results-icon">🔍</div>
           <h3>ფეხბურთელი ვერ მოიძებნა</h3>
-          <p>სცადეთ სხვა საძიებო სიტყვა (მაგალითად: „ხვიჩა“, „მიქაუტაძე“, „Napoli“, „კაშია“).</p>
+          <p>სცადეთ სხვა საძიებო სიტყვა (მაგალითად: „ხვიჩა“, „მიქაუტაძე“, „პსჟ“, „ლივერპული“, „უდინეზე“).</p>
           <button class="btn btn-secondary" id="empty-reset-btn">ფილტრის გასუფთავება</button>
         </div>
       </div>
@@ -289,7 +294,7 @@
               </div>
             </div>
             <div class="scorers-list">
-              <div class="scorer">🎯 ნიკა კვეკვესკირის გადამწყვეტი პენალტი</div>
+              <div class="scorer">🎯 ისტორიული გადამწყვეტი პენალტი</div>
               <div class="scorer">🧤 მამარდაშვილის მოგერიებული დარტყმა</div>
             </div>
             <p class="history-desc">
@@ -323,31 +328,31 @@
       </div>
     </section>
 
-    <!-- COACH & STAFF SECTION -->
+    <!-- COACH & STAFF SECTION (Updated to Ramaz Svanadze) -->
     <section class="section coach-section" id="coach">
       <div class="container">
         <div class="coach-wrapper">
           <div class="coach-info">
             <div class="sub-badge">HEAD COACH</div>
-            <h2 class="coach-name">ვილი სანიოლი <span class="french-flag">🇫🇷</span></h2>
-            <div class="coach-role">საქართველოს ეროვნული ნაკრების მთავარი მწვრთნელი (2021-დღემდე)</div>
+            <h2 class="coach-name">რამაზ სვანაძე <span class="flag-icon" style="font-size: 1.6rem; vertical-align: middle;">🇬🇪</span></h2>
+            <div class="coach-role">საქართველოს ეროვნული ნაკრების მთავარი მწვრთნელი</div>
             
             <p class="coach-bio">
-              ლეგენდარულმა ფრანგმა სპეციალისტმა და მიუნხენის „ბაიერნის“ ყოფილმა ვარსკვლავმა საქართველოს ნაკრებში შექმნა შეუპოვარი, დისციპლინირებული და მებრძოლი სული. სწორედ სანიოლის ხელმძღვანელობით ნაკრებმა ისტორიაში უდიდეს მწვერვალს მიაღწია და ევრო 2024-ის 16 საუკეთესო გუნდს შორის მოხვდა.
+              ქართველი სპეციალისტი, რომელმაც ქართული ფეხბურთის ახალი თაობა აღზარდა. რამაზ სვანაძის ხელმძღვანელობით საქართველოს 21-წლამდე ნაკრებმა 2023 წლის ევროპის ჩემპიონატზე ისტორიული შედეგი აჩვენა, ჯგუფში გადაასწრო პორტუგალიას, ნიდერლანდებსა და ბელგიას და მეოთხედფინალში გავიდა. გამოირჩევა შეტევითი საფეხბურთო ფილოსოფიითა და ახალგაზრდებისადმი განსაკუთრებული ნდობით.
             </p>
 
             <div class="coach-stats-grid">
               <div class="coach-stat-item">
-                <div class="c-num">Euro 2024</div>
-                <div class="c-txt">ისტორიული გასვლა</div>
+                <div class="c-num">EURO U21</div>
+                <div class="c-txt">ისტორიული 1/4 ფინალი</div>
               </div>
               <div class="coach-stat-item">
-                <div class="c-num">50%+</div>
-                <div class="c-txt">მოგების მაჩვენებელი</div>
+                <div class="c-num">ახალი თაობა</div>
+                <div class="c-txt">ტალანტების განვითარება</div>
               </div>
               <div class="coach-stat-item">
-                <div class="c-num">B ლიგა</div>
-                <div class="c-txt">ერთა ლიგის დაწინაურება</div>
+                <div class="c-num">შეტევა</div>
+                <div class="c-txt">თანამედროვე ტაქტიკა</div>
               </div>
             </div>
 
@@ -355,7 +360,7 @@
               <h4 class="crew-title">სამწვრთნელო შტაბი:</h4>
               <div class="crew-badges">
                 <span class="crew-pill"><strong>ზურაბ ხიზანიშვილი</strong> — ასისტენტი</span>
-                <span class="crew-pill"><strong>ადელ შელი</strong> — ასისტენტი</span>
+                <span class="crew-pill"><strong>გიორგი ცეცაძე</strong> — ასისტენტი</span>
                 <span class="crew-pill"><strong>გიორგი ლომაია</strong> — მეკარეების მწვრთნელი</span>
               </div>
             </div>
@@ -364,9 +369,9 @@
           <div class="coach-quote-box">
             <div class="quote-mark">“</div>
             <blockquote class="coach-quote">
-              „ქართველ ფეხბურთელებს აქვთ უსაზღვრო გული და ტალანტი. ჩვენ დავამტკიცეთ, რომ როდესაც მთელი ქვეყანა ერთად დგას, შეუძლებელი არაფერია.“
+              „ჩვენი მთავარი მიზანია შევქმნათ გამარჯვებულის მენტალიტეტის მქონე გუნდი, რომელიც ყოველთვის ქართველი ხალხის გულისთვის, თავდაუზოგავად იბრძოლებს.“
             </blockquote>
-            <div class="quote-author">— ვილი სანიოლი</div>
+            <div class="quote-author">— რამაზ სვანაძე</div>
           </div>
         </div>
       </div>
@@ -394,19 +399,19 @@
             
             <div class="poll-options" id="poll-options">
               <button class="poll-btn" data-player="kvara">
-                <span class="p-name">ხვიჩა კვარაცხელია</span>
-                <span class="p-pct" id="vote-kvara">46%</span>
+                <span class="p-name">ხვიჩა კვარაცხელია (პსჟ)</span>
+                <span class="p-pct" id="vote-kvara">44%</span>
               </button>
               <button class="poll-btn" data-player="mamarda">
-                <span class="p-name">გიორგი მამარდაშვილი</span>
-                <span class="p-pct" id="vote-mamarda">31%</span>
+                <span class="p-name">გიორგი მამარდაშვილი (ლივერპული)</span>
+                <span class="p-pct" id="vote-mamarda">32%</span>
               </button>
               <button class="poll-btn" data-player="mikautadze">
-                <span class="p-name">გიორგი მიქაუტაძე</span>
-                <span class="p-pct" id="vote-mikautadze">15%</span>
+                <span class="p-name">გიორგი მიქაუტაძე (ვილიარეალი)</span>
+                <span class="p-pct" id="vote-mikautadze">16%</span>
               </button>
               <button class="poll-btn" data-player="chakve">
-                <span class="p-name">გიორგი ჩაკვეტაძე</span>
+                <span class="p-name">გიორგი ჩაკვეტაძე (უდინეზე)</span>
                 <span class="p-pct" id="vote-chakve">8%</span>
               </button>
             </div>
@@ -469,6 +474,7 @@
           <ul class="col-links">
             <li><a href="#hero">მთავარი</a></li>
             <li><a href="#squad">შემადგენლობა</a></li>
+            <li><a href="clubs.html" style="color: var(--geo-gold); font-weight: 700;">ქართული კლუბები ⚽</a></li>
             <li><a href="#history">მატჩები & ისტორია</a></li>
             <li><a href="#coach">სამწვრთნელო შტაბი</a></li>
             <li><a href="#fanzone">ფან-ზონა</a></li>
@@ -478,10 +484,10 @@
         <div class="footer-col">
           <div class="col-title">პოზიციები</div>
           <ul class="col-links">
-            <li><a href="#squad" onclick="window.filterByPosition('GK')">მეკარეები (3)</a></li>
-            <li><a href="#squad" onclick="window.filterByPosition('DEF')">მცველები (10)</a></li>
-            <li><a href="#squad" onclick="window.filterByPosition('MID')">ნახევარმცველები (10)</a></li>
-            <li><a href="#squad" onclick="window.filterByPosition('FWD')">თავდამსხმელები (3)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('GK')">მეკარეები (2)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('DEF')">მცველები (8)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('MID')">ნახევარმცველები (9)</a></li>
+            <li><a href="#squad" onclick="window.filterByPosition('FWD')">თავდამსხმელები (4)</a></li>
           </ul>
         </div>
 
@@ -489,8 +495,8 @@
           <div class="col-title">ოფიციალური რესურსები</div>
           <ul class="col-links">
             <li><a href="https://nakrebi.ge" target="_blank" rel="noopener noreferrer">GFF — Nakrebi.ge ↗</a></li>
+            <li><a href="https://erovnuliliga.ge" target="_blank" rel="noopener noreferrer">Crystalbet ეროვნული ლიგა ↗</a></li>
             <li><a href="https://uefa.com" target="_blank" rel="noopener noreferrer">UEFA Official ↗</a></li>
-            <li><a href="https://transfermarkt.com" target="_blank" rel="noopener noreferrer">Transfermarkt ↗</a></li>
           </ul>
         </div>
       </div>
